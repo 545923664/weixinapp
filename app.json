@@ -20,23 +20,23 @@
    "selectedColor": "#11cd6e",  
    "borderStyle":"white",  
    "list": [{  
-     "selectedIconPath": "images/sytc.png",  
-     "iconPath": "images/sy.png",  
+     "selectedIconPath": "images/yxtc.png",  
+     "iconPath": "images/yx.png",  
      "pagePath": "pages/games/games",  
      "text": "游戏"  
    }, {  
-     "selectedIconPath": "images/xatc.png",  
-     "iconPath": "images/xa.png",  
+     "selectedIconPath": "images/rrtc.png",  
+     "iconPath": "images/rr.png",  
      "pagePath": "pages/missionList/missionList",  
      "text": "任务"  
    },{  
-     "selectedIconPath": "images/xatc.png",  
-     "iconPath": "images/xa.png",  
+     "selectedIconPath": "images/xxtc.png",  
+     "iconPath": "images/xx.png",  
      "pagePath": "pages/messages/messages",  
      "text": "消息"  
    },{  
-     "selectedIconPath": "images/yhtc.png",  
-     "iconPath": "images/yh.png",  
+     "selectedIconPath": "images/wdtc.png",  
+     "iconPath": "images/wd.png",  
      "pagePath": "pages/index/index",  
      "text": "我"  
    }]  
