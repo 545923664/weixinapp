@@ -1,10 +1,263 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class="flex-wrp" style="margin-left:5px;flex-direction:row;">
+  <view class="flex-item bc_red">
+    <image  style=" width: 260rpx;height:260rpx;" src="{{userInfo.avatarUrl}}"/>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+<view class="flex-wrps" style="flex-direction:column;margin-left:10px;">
+  <view class="flex-wrps" style="flex-direction:row;">
+    <view class="flex-items man-data" >
+      昵称
+    </view>
+    <view  class="flex-items" style="font-size:18px;">
+      Vivan
+    </view>
   </view>
+
+  <view class="flex-wrps" style="flex-direction:row;">
+    <view class="flex-items man-data">
+      性别
+    </view>
+    <view  class="flex-items">
+      男
+    </view>
+  </view>
+  <view class="flex-wrps" style="flex-direction:row;">
+    <view class="flex-items man-data">
+      地区
+    </view>
+    <view  class="flex-items">
+      北京
+    </view>
+  </view>
+
+  <view class="flex-wrps" style="flex-direction:row;">
+    <view class="flex-items man-data" >
+      游戏等级
+    </view>
+    <view  class="flex-items">
+      王者荣耀
+    </view>
+   </view>
+  </view>
+</view><!--顶部-->
+
+<view class="flex-wrps" style="flex-direction:column;margin-left:5px;">
+  <view class="flex-wrps" style="flex-direction:row;">
+    <view class="flex-items man-data" >
+      账号余额
+    </view>
+    <view  class="flex-items" style="font-size:18px;">
+      100000金币
+    </view>
+  </view>
+
+  <view class="flex-wrps" style="flex-direction:row;">
+    <view class="flex-items man-data">
+      游戏场次
+    </view>
+    <view  class="flex-items">
+      99999场
+    </view>
+  </view>
+  <view class="flex-wrps" style="flex-direction:row;">
+    <view class="flex-items man-data">
+      胜率
+    </view>
+    <view  class="flex-items">
+      100%
+    </view>
+  </view>
+
+  <view class="flex-wrps" style="flex-direction:row;">
+    <view class="flex-items man-data" >
+      账号操作
+    </view>
+    <view  class="flex-items">
+      提现
+    </view>
+    <view  class="flex-items">
+      充值
+    </view>
+   </view>
+</view><!--账号余额-->
+
+<view class="flex-zhxx" style="flex-direction:row;">
+  <view class="flex-zhxxs">游戏信息</view>
+  <view class="flex-zhyes">账户信息</view>
 </view>
+
+
+<scroll-view scroll-y="true" style="height: 270px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<view style="margin-left:10px;">
+<view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+      时间
+    </view>
+    <view  class="flex-items-list">
+      房间名称
+    </view>
+    <view  class="flex-items-list">
+      竞猜结果
+    </view>
+    <view  class="flex-items-list">
+      游戏结果
+    </view>
+</view>
+ <view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+       18:11:03
+    </view>
+    <view  class="flex-items-list">
+      4051
+    </view>
+    <view  class="flex-items-list">
+      小鸡
+    </view>
+    <view  class="flex-items-list">
+      小鸭
+    </view>
+ </view>
+ <view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+       18:11:03
+    </view>
+    <view  class="flex-items-list">
+      4051
+    </view>
+    <view  class="flex-items-list">
+      小鸡
+    </view>
+    <view  class="flex-items-list">
+      小鸭
+    </view>
+ </view>
+ <view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+       18:11:03
+    </view>
+    <view  class="flex-items-list">
+      4051
+    </view>
+    <view  class="flex-items-list">
+      小鸡
+    </view>
+    <view  class="flex-items-list">
+      小鸭
+    </view>
+ </view>
+ <view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+       18:11:03
+    </view>
+    <view  class="flex-items-list">
+      4051
+    </view>
+    <view  class="flex-items-list">
+      小鸡
+    </view>
+    <view  class="flex-items-list">
+      小鸭
+    </view>
+ </view>
+ <view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+       18:11:03
+    </view>
+    <view  class="flex-items-list">
+      4051
+    </view>
+    <view  class="flex-items-list">
+      小鸡
+    </view>
+    <view  class="flex-items-list">
+      小鸭
+    </view>
+ </view>
+ <view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+       18:11:03
+    </view>
+    <view  class="flex-items-list">
+      4051
+    </view>
+    <view  class="flex-items-list">
+      小鸡
+    </view>
+    <view  class="flex-items-list">
+      小鸭
+    </view>
+ </view>
+ <view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+       18:11:03
+    </view>
+    <view  class="flex-items-list">
+      4051
+    </view>
+    <view  class="flex-items-list">
+      小鸡
+    </view>
+    <view  class="flex-items-list">
+      小鸭
+    </view>
+ </view>
+ <view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+       18:11:03
+    </view>
+    <view  class="flex-items-list">
+      4051
+    </view>
+    <view  class="flex-items-list">
+      小鸡
+    </view>
+    <view  class="flex-items-list">
+      小鸭
+    </view>
+ </view>
+ <view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+       18:11:03
+    </view>
+    <view  class="flex-items-list">
+      4051
+    </view>
+    <view  class="flex-items-list">
+      小鸡
+    </view>
+    <view  class="flex-items-list">
+      小鸭
+    </view>
+ </view>
+ <view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+       18:11:03
+    </view>
+    <view  class="flex-items-list">
+      4051
+    </view>
+    <view  class="flex-items-list">
+      小鸡
+    </view>
+    <view  class="flex-items-list">
+      小鸭
+    </view>
+ </view>
+ <view class="flex-wrps-list" style="flex-direction:row;">
+    <view class="flex-items-list ">
+       18:11:03
+    </view>
+    <view  class="flex-items-list">
+      4051
+    </view>
+    <view  class="flex-items-list">
+      小鸡
+    </view>
+    <view  class="flex-items-list">
+      小鸭
+    </view>
+ </view>
+</view>
+ </scroll-view>
+

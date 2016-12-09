@@ -1,0 +1,76 @@
+<view style="height:80px;"><!--头像-->
+ <view class="flex-wrp" style="width:100%;height:40%;margin-left:0px;flex-direction:row;">
+    <view class="flex-iteimg">
+        <image class="imaget"  src="{{avatarUrl}}"/>
+    </view>
+    <view class="flex-iteimg">
+        <image class="imaget" src="{{avatarUrl}}"/>
+    </view>
+    <view class="flex-iteimg">
+        <image class="imaget" src="{{avatarUrl}}"/>
+    </view>
+    <view class="flex-iteimg">
+        <image class="imaget" src="{{avatarUrl}}"/>
+    </view>
+ </view>
+</view>
+
+<view style="height:70px;">
+   <view class="flex-wrp" style="width:100%;height:40%;margin-left:0px;flex-direction:row;">
+      <view class="flex-iteimg">
+        <image class="images"  src="http://img.pconline.com.cn/images/upload/upc/tx/bbs6/1005/24/c0/3985522_1274680953837_1024x1024.jpg"/>
+       </view>
+       <view class="flex-iteimg">
+        <image class="images"  src="http://img.pconline.com.cn/images/upload/upc/tx/bbs6/1005/24/c0/3985522_1274680953837_1024x1024.jpg"/>
+       </view>
+       <view class="flex-iteimg">
+        <image class="images"  src="http://img.pconline.com.cn/images/upload/upc/tx/bbs6/1005/24/c0/3985522_1274680953837_1024x1024.jpg"/>
+       </view>
+       <view class="flex-iteimg">
+        <image class="images"  src="http://img.pconline.com.cn/images/upload/upc/tx/bbs6/1005/24/c0/3985522_1274680953837_1024x1024.jpg"/>
+       </view>
+  </view>
+</view>
+
+<view style="height:70px;">
+   <view class="flex-wrp" style="width:100%;height:40%;margin-left:0px;flex-direction:row;">
+      <view class="flex-iteimg">
+        <image class="images"  src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1481179033&di=e4b53e2d935bf3c2c94b5781c70c7e07&src=http://pic3.16pic.com/00/17/74/16pic_1774790_b.jpg"/>
+       </view>
+       <view class="flex-iteimg">
+        <image class="images"  src="http://www.51myshine.com/thumb/bd13872413.jpg"/>
+       </view>
+       <view class="flex-iteimg">
+        <image class="images"  src="http://www.51myshine.com/thumb/bd13872413.jpg"/>
+       </view>
+       <view class="flex-iteimg">
+        <image class="images"  src="http://www.51myshine.com/thumb/bd13872413.jpg"/>
+       </view>
+  </view>
+</view>
+
+<view style="height:50px;flex-direction:row;">
+    <view class="flex-iteimg">
+        <image class="images"  src="http://pic.baike.soso.com/p/20140415/20140415234543-1932303213.jpg"/>
+    </view>
+    <view class="flex-iteimg" style="margin-left:145px;font-size:15px;color:black;">
+        结果
+    </view>
+</view>
+
+<view style="height:145px;margin-left:140px;">
+    <view >
+        <image style="width: 220rpx;height:130px;"  src="http://imgsrc.baidu.com/forum/w=580/sign=0508c8129b22720e7bcee2f24bca0a3a/63a11a23dd54564e9ea78949b0de9c82d3584ff0.jpg"/>
+    </view>
+</view>
+
+<view  class="botom-font">
+        离开房间
+</view>
+
+<view  class="botom-font">
+        下一局
+</view>
+  
+
+

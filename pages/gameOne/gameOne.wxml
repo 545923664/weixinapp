@@ -1,4 +1,124 @@
-<!--pages/gameOne/gameOne.wxml-->
-<span style="font-size:24px;"><!--navigatort.wxml-->    
-    <view style="text-align:center"> {{title}}</view>
-</span> 
+<view style="width:100%;height:20%; margin-left:5px;">
+<!--四个用户-->
+    <view style="width:200rpx;height:200rpx;display:inline;margin-left:5px;">
+        <image  style=" width: 170rpx;height:130rpx;" src="{{userInfo.avatarUrl}}"/>
+    </view>
+
+    <view style="width:200rpx;height:200rpx;display:inline;margin-left:5px;">
+        <image  style=" width: 170rpx;height:130rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+    </view> 
+    <view style="width:200rpx;height:200rpx;display:inline;margin-left:5px;">
+        <image  style=" width: 170rpx;height:130rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+    </view> 
+    <view style="width:200rpx;height:200rpx;display:inline;margin-left:5px;">
+        <image  style=" width: 170rpx;height:130rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+    </view> 
+
+<!--三个用户选的啥-->
+    <view style="width:220rpx;height:220rpx;display:inline;margin-left:180rpx;">
+        <image  style=" width: 170rpx;height:100rpx;margin-left:5px;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+    </view> 
+    <view style="width:220rpx;height:220rpx;display:inline;">
+        <image  style=" width: 170rpx;height:100rpx;margin-left:5px;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+    </view> 
+    <view style="width:220rpx;height:220rpx;display:inline;">
+        <image  style=" width: 170rpx;height:100rpx;margin-left:5px;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+    </view>
+</view>
+<view style="font-size:15px;color:black;heigh:10%;margin-left:10px;">
+游戏说明(点击图标查看详情)
+</view>
+
+<view class="flex-wrp" style="height:30%;margin-left:10px;margin-top:5px;flex-direction:row;">
+    <view bindtap="bindViewTap" style="width:20%;height:30%;">
+        <image  style=" width: 150rpx;height:130rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+    </view>
+    
+    <view>
+        <view class="flex-wrp" style="flex-direction:row;" >
+            <view style="font-size:15px;" class="flex-item">小鸡:</view>
+            <view style="font-size:15px;color:#600000;">1赔1000000</view>
+        </view>
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view style="font-size:15px;" class="flex-item">单价:</view>
+            <view style="font-size:15px;color:#600000;">500</view>
+        </view>
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view style="font-size:15px;" class="flex-item">金额:</view>
+            <view style="font-size:15px;color:#600000;">10000</view>
+        </view>
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view style="font-size:15px;" class="flex-item">注意:</view>
+            <view style="font-size:15px;color:#600000;">竞猜后不可修改</view>
+        </view>
+    </view>
+</view>
+   
+<button bindtap="add" style="width:250px;margin-left:100px;">确认</button>
+<view style="margin-left:10px;margin-top:0px;">
+    <view style="width:20%;height:30%;margin-top:-108px;">
+        <image  style=" width: 150rpx;height:130rpx;margin-top:18px;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+    </view>
+    <view style="width:20%;height:30%;margin-top:-2px;">
+        <image  style=" width: 150rpx;height:130rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+    </view>
+</view>
+
+    
+
+
+
+<view style="font-size:15px;color:red;heigh:10%;margin-left:10px;">
+    系统消息
+</view>
+  <scroll-view scroll-y="true" style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+ <view style="width:100%;height:30%;margin-left:10px;font-size:15px;">
+
+    <view style="width=100px;height:25px;">
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
+      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
+    </view>
+
+    <view style="width=100px;height:25px;">
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
+      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
+    </view>
+    <view style="width=100px;height:25px;">
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
+      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
+    </view>
+    <view style="width=100px;height:25px;">
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
+      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
+    </view>
+    <view style="width=100px;height:25px;">
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
+      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
+    </view>
+    <view style="width=100px;height:25px;">
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
+      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
+    </view>
+    <view style="width=100px;height:25px;">
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
+      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
+    </view>
+    <view style="width=100px;height:25px;">
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
+      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
+    </view>
+    <view style="width=100px;height:25px;">
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
+      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
+      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
+    </view>
+ </view>
+ </scroll-view>

@@ -1,1 +1,22 @@
 /* pages/gameOne/gameOne.wxss */
+/**index.wxss**/
+.flex-item{
+    width: 80px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-items{
+    width: 80px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-wrp{
+    height: 28px;
+    display:flex;
+    background-color: #FFFFFF;
+}

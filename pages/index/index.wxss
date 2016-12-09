@@ -1,21 +1,67 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.flex-wrp{
+    height: 25%;
+    display:flex;
+}
+.flex-item{
+    width: 130px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.flex-wrps{
+    height: 120px;
+    display:flex;
+}
+.flex-items{
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.man-data{
+  border:1px solid;
+  solid:red;
+  font-size:18px;
+}
+.man-datas{
+  font-size:18px;
+}
+.flex-zhxx{
+  height: 10%;
+  weight: 100%;
+  display:flex;
+  font-size:15px;
+  margin:10px;
+}
+.flex-zhxxs{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#9D9D9D;
+    margin-left:50px; 
+}
+.flex-zhyes{
+    width: 50%;
+    height: 50%;
+    color:black;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.flex-items-list{
+    width: 80px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:15px;
+    
 }
-
-.usermotto {
-  margin-top: 200px;
+.flex-wrps-list{
+    height: 22px;
+    display:flex;
 }
