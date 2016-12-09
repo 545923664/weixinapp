@@ -1,0 +1,50 @@
+/* pages/missionList/missionList.wxss */
+.flex-wrp1{
+    height: 120rpx;
+    display:flex;
+}
+.section1{
+    margin-left: 160rpx;
+}
+.section_gap{
+    padding: 0 30rpx;
+}
+.section__title{
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.section_gap .section__title{
+    padding-left: 0;
+    padding-right: 0;
+}
+.section__ctn{
+    
+}
+.flex-item1{
+    width: 300rpx;
+    height: 60rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid;
+    solid:balck;
+}
+.flex-item11{
+    width: 140rpx;
+    height: 60rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid;
+    solid:balck;
+}
+.flex-item2{
+    width: 445rpx;
+    height: 96rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid;
+    solid:balck;
+}

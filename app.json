@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/games/games",  
+    "pages/newRoom/newRoom",
+    "pages/missionList/missionList",
+    "pages/missionInnfo/missionInnfo",
+    "pages/messages/messages",  
+    "pages/index/index",
+    "pages/gameOne/gameOne"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {  
+   "color": "#a9b7b7",  
+   "selectedColor": "#11cd6e",  
+   "borderStyle":"white",  
+   "list": [{  
+     "selectedIconPath": "images/sytc.png",  
+     "iconPath": "images/sy.png",  
+     "pagePath": "pages/games/games",  
+     "text": "游戏"  
+   }, {  
+     "selectedIconPath": "images/xatc.png",  
+     "iconPath": "images/xa.png",  
+     "pagePath": "pages/missionList/missionList",  
+     "text": "任务"  
+   },{  
+     "selectedIconPath": "images/xatc.png",  
+     "iconPath": "images/xa.png",  
+     "pagePath": "pages/messages/messages",  
+     "text": "消息"  
+   },{  
+     "selectedIconPath": "images/yhtc.png",  
+     "iconPath": "images/yh.png",  
+     "pagePath": "pages/index/index",  
+     "text": "我"  
+   }]  
+ },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

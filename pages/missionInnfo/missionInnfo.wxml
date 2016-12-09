@@ -1,0 +1,21 @@
+<!--pages/missionInnfo/missionInnfo.wxml-->
+    
+<view>
+    <span style="font-size:24px;">
+        <view style="text-align:center"> {{title}}</view>
+    </span> 
+    <view style="margin-left:40rpx;width:700rpx;">
+    <scroll-x> 
+    <text>{{txt}}</text>
+    </scroll-x>
+</view>
+    <!--<view style="margin-left:20rpx;margin-right:10rpx;border:1rpx solid;solid:black;">
+        <image src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0" 
+                style="width:696rpx;height:800rpx;margin-left:10rpx;"/>
+    </view>-->
+    <view style="margin-left:250rpx;margin-top:30rpx;background:green;width:200rpx;height:80rpx;border:1rpx solid;solid:black;text-align:center;">
+        领取奖励
+    </view>
+</view>
+
+
