@@ -54,7 +54,7 @@
     </view>
 </view>
    
-<button bindtap="add" style="width:250px;margin-left:100px;">确认</button>
+<button bindtap="add" style="width:250px;margin-left:100px;background:#00a2ea;">确认</button>
 <view style="margin-left:10px;margin-top:0px;">
     <view style="width:20%;height:30%;margin-top:-108px;">
         <image  style=" width: 150rpx;height:130rpx;margin-top:18px;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>

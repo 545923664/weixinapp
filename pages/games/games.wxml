@@ -1,8 +1,8 @@
 <!--pages/games/games.wxml-->
-<view style="margin-left:250rpx;width:250rpx;">
+<view style="margin-left:250rpx;margin-top:20rpx;width:250rpx;">
     <!--<button style="background:green;">创建房间</button> -->
     <navigator class="title" url="../newRoom/newRoom"
-                 style="height:100rpx;border:1rpx solid;background:green;solid:black;text-align:center;line-height: 50px;" >创建房间</navigator> 
+                 style="height:100rpx;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;line-height: 50px;" >创建房间</navigator> 
 </view>
 <!--1-->
 <view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
@@ -24,9 +24,35 @@
                 </view>
             </view>
         </view>
+        <button  style="width:16%;height:58px;float:right;display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;">加入游戏</button>
+        <!--<view>
+            <navigator class="title" url="../gameOne/gameOne"
+                 style="width:16%;height:58px;line-height:30px;float:right;display:block;border:1rpx solid;background:#ABD0BC;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
+        </view>-->
+</view>
+<!--1-->
+<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
+        <view style="float:left;width:15%;display:inline;">
+            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
+                        src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+        </view>
+
+        <view class="section1">
+            <view class="flex-wrp1" style="flex-direction:column;">
+                <view  class="flex-wrp1" style="flex-direction:row;" >
+                    <view  class="flex-item1">
+                        愤怒的小鸡</view><!--最多8个汉字-->
+                    <view class="flex-item11">
+                   2/4</view>
+                </view>
+                <view class="flex-item2">
+                   想玩的速度加入
+                </view>
+            </view>
+        </view>
         <view>
             <navigator class="title" url="../gameOne/gameOne"
-                 style="width:16%;height:58px;line-height:30px;float:right;display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
+                 style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
         </view>
 </view>
 <!--1-->
@@ -51,7 +77,7 @@
         </view>
         <view>
             <navigator class="title" url="../gameOne/gameOne"
-                 style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
+                 style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
         </view>
 </view>
 <!--1-->
@@ -76,7 +102,7 @@
         </view>
         <view>
             <navigator class="title" url="../gameOne/gameOne"
-                 style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
+                 style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
         </view>
 </view>
 <!--1-->
@@ -101,10 +127,64 @@
         </view>
         <view>
             <navigator class="title" url="../gameOne/gameOne"
+                 style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
+        </view>
+</view>
+<!--1-->
+<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
+        <view style="float:left;width:15%;display:inline;">
+            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
+                        src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+        </view>
+
+        <view class="section1">
+            <view class="flex-wrp1" style="flex-direction:column;">
+                <view  class="flex-wrp1" style="flex-direction:row;" >
+                    <view  class="flex-item1">
+                        愤怒的小鸡</view><!--最多8个汉字-->
+                    <view class="flex-item11">
+                   2/4</view>
+                </view>
+                <view class="flex-item2">
+                   想玩的速度加入
+                </view>
+            </view>
+        </view>
+        <view>
+            <navigator class="title" url="../gameOne/gameOne"
+                 style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
+        </view>
+</view>
+<!--1-->
+<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
+        <view style="float:left;width:15%;display:inline;">
+            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
+                        src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+        </view>
+
+        <view class="section1">
+            <view class="flex-wrp1" style="flex-direction:column;">
+                <view  class="flex-wrp1" style="flex-direction:row;" >
+                    <view  class="flex-item1">
+                        愤怒的小鸡</view><!--最多8个汉字-->
+                    <view class="flex-item11">
+                   2/4</view>
+                </view>
+                <view class="flex-item2">
+                   想玩的速度加入
+                </view>
+            </view>
+        </view>
+        <view>
+            <navigator class="title" url="../gameOne/gameOne"
+<<<<<<< HEAD
                  style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入游戏</navigator> 
+=======
+                 style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
+>>>>>>> 0cf2360d5348ffc6135345a375ac70017467d387
         </view>
 </view>
-<!--2-->
+<!--1-->
 <view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
         <view style="float:left;width:15%;display:inline;">
             <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
@@ -115,20 +195,26 @@
             <view class="flex-wrp1" style="flex-direction:column;">
                 <view  class="flex-wrp1" style="flex-direction:row;" >
                     <view  class="flex-item1">
-                        愤怒的小鸡2</view><!--最多8个汉字-->
+                        愤怒的小鸡</view><!--最多8个汉字-->
                     <view class="flex-item11">
-                   2/42</view>
+                   2/4</view>
                 </view>
                 <view class="flex-item2">
-                   想玩的速度加入2
+                   想玩的速度加入
                 </view>
             </view>
         </view>
         <view>
+<<<<<<< HEAD
             <navigator class="title" url="../gameOne/gameOne" type = "button"
                  style="width:15%;height:120rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-126rpx;margin-right:10rpx;" >加入游戏</navigator> 
+=======
+            <navigator class="title" url="../gameOne/gameOne"
+                 style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
+>>>>>>> 0cf2360d5348ffc6135345a375ac70017467d387
         </view>
 </view>
+
 
 <view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
         <view style="float:left;width:15%;display:inline;">
@@ -151,7 +237,7 @@
         </view>
         <view>
             <navigator class="title" url="../gameOne/gameOne?title=风怒的小鸡的游戏厅"
-                    style="width:16%;height:58px;float:right; display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
+                    style="width:16%;height:58px;float:right; display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
                         加入 游戏
             </navigator> 
         </view>

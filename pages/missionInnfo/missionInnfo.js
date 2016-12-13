@@ -28,3 +28,13 @@ Page({
     // 页面关闭
   }
 })
+,
+wx.request({
+        url: 'http://localhost:8080/gameTask/queryOne', 
+        data: {},  
+        method: 'GET',   
+        success: function(res){  
+        console.info(res);  
+          data:res.data      
+        }
+})
