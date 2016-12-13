@@ -44,7 +44,7 @@
     align-items: center;
     border:1px solid;
     solid:balck;
-    background:green;
+    background:#00a2ea;
 }
 .flex-itemcj{
     width: 180rpx;
@@ -54,7 +54,7 @@
     align-items: center;
     border:1px solid;
     solid:balck;
-    background:green;
+    background:#00a2ea;
 }
 .flex-itemqx{
     width: 180rpx;
@@ -65,7 +65,7 @@
     border:1px solid;
     solid:balck;
     margin-left: 30rpx;
-    background:green;
+    background:#00a2ea;
 }
 .flex-item11{
     width: 450rpx;

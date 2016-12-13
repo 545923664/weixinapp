@@ -16,4 +16,13 @@ Page({
   onUnload:function(){
     // 页面关闭
   }
+}),
+wx.request({
+        url: 'http://localhost:8080/gameTask/queryAll', 
+        data: {},  
+        method: 'GET',   
+        success: function(res){  
+        console.info(res);  
+          data:res.data      
+        }
 })
