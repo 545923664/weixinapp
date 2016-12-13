@@ -1,17 +1,17 @@
 {
   "pages":[
+    "pages/missionList/missionList",
+    "pages/games/games",  
     "pages/index/index",
     "pages/oplottery/oplottery",
-    "pages/games/games",  
     "pages/newRoom/newRoom",
-    "pages/missionList/missionList",
     "pages/missionInnfo/missionInnfo",
     "pages/messages/messages",  
     "pages/gameOne/gameOne"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "rgba(215, 215, 215, 1)",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
   },
