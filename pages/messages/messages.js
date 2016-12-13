@@ -1,4 +1,8 @@
 // pages/messages/messages.js
+
+
+var lcPostData='{"id":1,"qty":2}'
+
 Page({
   data:{},
   onLoad:function(options){
@@ -16,4 +20,13 @@ Page({
   onUnload:function(){
     // 页面关闭
   }
-})
+}),
+wx.request({
+          url: 'http://localhost:8080/queryMesage/queryMesage', 
+          method: 'GET', 
+          data: {"cityname":"张三"},  
+          success: function(res){  
+          console.info("lujing="+res);
+                  
+          }
+    }); 
