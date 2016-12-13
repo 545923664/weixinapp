@@ -202,13 +202,8 @@
             </view>
         </view>
         <view>
-<<<<<<< HEAD
-            <navigator class="title" url="../gameOne/gameOne" type = "button"
-                 style="width:15%;height:120rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-126rpx;margin-right:10rpx;" >加入游戏</navigator> 
-=======
             <navigator class="title" url="../gameOne/gameOne"
                  style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
->>>>>>> 0cf2360d5348ffc6135345a375ac70017467d387
         </view>
 </view>
 

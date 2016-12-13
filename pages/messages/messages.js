@@ -4,7 +4,9 @@
 var lcPostData='{"id":1,"qty":2}'
 
 Page({
-  data:{},
+  data:{
+    list:''
+  },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
   },
@@ -23,10 +25,11 @@ Page({
 }),
 wx.request({
           url: 'http://localhost:8080/queryMesage/queryMesage', 
-          method: 'GET', 
-          data: {"cityname":"张三"},  
+
+          data: {},  
+          method: 'GET',   
           success: function(res){  
-          console.info("lujing="+res);
-                  
+          console.info("lujing="+res);  
+           list:res.data      
           }
     }); 
