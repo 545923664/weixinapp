@@ -1,5 +1,8 @@
-<!--pages/missionList/missionList.wxml-->
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
+<!--pages/missionList/missionList.wxml
+    百分比
+-->
+
+<view style="width:95%;margin-left:10rpx;height:120rpx;margin-top:10px;">
         <view style="float:left;width:15%;display:inline;">
             <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
                         src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
@@ -19,8 +22,8 @@
             </view>
         </view>
         <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right;line-height:30px; display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
+            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】...   "
+                    style="width:16%;height:58px;float:right;line-height:30px; display:grey;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
                         查看 详情
             </navigator> 
         </view>

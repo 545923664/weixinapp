@@ -27,24 +27,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid;
+    border:1rpx solid;
     solid:balck;
 }
 .flex-item11{
-    width: 140rpx;
+    width: 138rpx;
     height: 60rpx;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid;
+    border:1rpx solid;
     solid:balck;
 }
 .flex-item2{
-    width: 445rpx;
-    height: 96rpx;
+    width: 442rpx;
+    height: 102rpx;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid;
+    border:1rpx solid;
     solid:balck;
 }

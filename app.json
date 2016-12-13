@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/missionList/missionList",
     "pages/games/games",  
+    "pages/missionList/missionList",
     "pages/index/index",
     "pages/oplottery/oplottery",
     "pages/newRoom/newRoom",
