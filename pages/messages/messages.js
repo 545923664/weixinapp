@@ -1,4 +1,8 @@
 // pages/messages/messages.js
+
+
+var lcPostData='{"id":1,"qty":2}'
+
 Page({
   data:{
     list:''
@@ -21,6 +25,7 @@ Page({
 }),
 wx.request({
           url: 'http://localhost:8080/queryMesage/queryMesage', 
+
           data: {},  
           method: 'GET',   
           success: function(res){  

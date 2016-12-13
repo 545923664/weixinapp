@@ -178,6 +178,7 @@
         <view>
             <navigator class="title" url="../gameOne/gameOne"
                  style="width:16%;height:116rpx;line-height:30px;float:right;display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
+
         </view>
 </view>
 <!--1-->

@@ -1,11 +1,8 @@
 {
   "pages":[
-<<<<<<< HEAD
-    "pages/messages/messages",  
-=======
-    "pages/missionList/missionList",
     "pages/games/games",  
->>>>>>> 0cf2360d5348ffc6135345a375ac70017467d387
+    "pages/messages/messages",
+    "pages/missionList/missionList",
     "pages/index/index",
     "pages/oplottery/oplottery",
     "pages/newRoom/newRoom",
