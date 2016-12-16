@@ -81,6 +81,7 @@
                 </view>
             </view>
         </view>
+
         <view class="buttona">
            <!-- <button>加入游戏</button>-->
             <navigator  url="../gameOne/gameOne" >加入  游戏</navigator> 

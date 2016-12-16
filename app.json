@@ -1,8 +1,9 @@
 {
   "pages":[
-    "pages/missionList/missionList",
-    "pages/messages/messages",
+
     "pages/games/games",  
+    "pages/messages/messages",
+    "pages/missionList/missionList",
     "pages/index/index",
     "pages/oplottery/oplottery",
     "pages/newRoom/newRoom",

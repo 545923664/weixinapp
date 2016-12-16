@@ -19,9 +19,6 @@
                 <view class="game-cont-hidden">
                     <input name="tid"  value="{{gametask.id}}"/>
                 </view>
-              <!--  <view class="btnview" bindtap="modalTap" >
-                    <button class="getmoney" disabled="{{gametask.taskstatus}}">领取奖励</button>
-                </view>-->
                 <button class="getmoney" bindtap="modalTap" disabled="{{gametask.taskstatus}}">领取奖励</button>
             </view>
     </view>
@@ -35,10 +32,6 @@
             <view> 奖励领取</view>
             <view> 领取成功！</view>
         </modal>
-        <!--<view class="btn-area">
-            <button type="default" bindtap="modalTap">点击弹出modal</button>
-            <button type="default" bindtap="modalTap2">点击弹出modal2</button>
-        </view>-->
     </view>
 </view>
 
