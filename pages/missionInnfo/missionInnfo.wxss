@@ -1,3 +1,25 @@
 /* pages/missionInnfo/missionInnfo.wxss */
+.getmoney{
+  margin-left:250rpx;
+  margin-top:50rpx;
+  background:#00a2ea;
+  width:240rpx;
+  height:100rpx;
+  border:1rpx solid;
+  solid:black;
+  text-align:center;  
+}
+.game-cont-hidden{
+    display: none;
+}
+.btnview{
+  
+  width:240rpx;
+  height:100rpx;
+  
+  
+}
+
+
 
 

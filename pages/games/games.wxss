@@ -61,6 +61,7 @@
 .flex-item62{
     width: 35%;
     height: 60rpx;
+    margin-left: -1rpx;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,8 +69,9 @@
     solid:balck;
 }
 .flex-item63{
-    width: 100%;
+    width: 99%;
     height: 57rpx;
+    margin-top: -1rpx;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,6 +81,7 @@
 .buttona{
      width:16%;
      height:120rpx;
+     margin-left: -3rpx;
      float:right;
      line-height:60rpx; 
      display:grey;
@@ -102,8 +105,7 @@
 
 
 
-
-
+/*
 .flex-item1{
     width: 60%;
     height: 60rpx;
@@ -144,4 +146,4 @@
     margin-top:-120rpx;
     margin-right:10rpx;
     
-}
+}*/

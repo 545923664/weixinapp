@@ -1,19 +1,45 @@
 <!--pages/missionInnfo/missionInnfo.wxml-->
-    
-<view>
-    <span style="font-size:24px;">
-        <view style="text-align:center;margin-top:30rpx;"> {{title}}</view>
-    </span> 
-
-    <view style="margin-left:40rpx;width:700rpx;margin-top:40rpx;">
-        <scroll-x > 
-        <text >{{txt}}</text>
-        </scroll-x>
+<form >
+    <view class="listview">
+            <view>
+                <span style="font-size:24px;">
+                    <view style="text-align:center;margin-top:30rpx;">
+                        <view wx:if="{{gametask.tasktitle==1}}"> 系统消息 </view>
+                        <view wx:elif="{{gametask.tasktitle==2}}"> 个人消息 </view>
+                        <view wx:else> {{gametask.tasktitle}}</view>                   
+                    </view>
+                </span> 
+                <view style="margin-left:40rpx;width:700rpx;margin-top:40rpx;word-break:break-all;">
+                    <scroll-x> 
+                        <text>                    
+                            {{gametask.taskcontent}}
+                        </text>
+                    </scroll-x>
+                </view>
+                <view class="game-cont-hidden">
+                    <input name="tid"  value="{{gametask.id}}"/>
+                </view>
+              <!--  <view class="btnview" bindtap="modalTap" >
+                    <button class="getmoney" disabled="{{gametask.taskstatus}}">领取奖励</button>
+                </view>-->
+                <button class="getmoney" bindtap="modalTap" disabled="{{gametask.taskstatus}}">领取奖励</button>
+            </view>
     </view>
-
-    <button style="margin-left:250rpx;margin-top:50rpx;background:#00a2ea;width:240rpx;height:100rpx;border:1rpx solid;solid:black;text-align:center;">
-        领取奖励
-    </button>
+</form>
+<view class="page">
+    <view class="page__bd">
+        <modal title="是否领取奖励！" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one" data-tid="{{gametask.id}}">
+            该任务奖励{{gametask.taskgold}}金币。
+        </modal>
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">
+            <view> 奖励领取</view>
+            <view> 领取成功！</view>
+        </modal>
+        <!--<view class="btn-area">
+            <button type="default" bindtap="modalTap">点击弹出modal</button>
+            <button type="default" bindtap="modalTap2">点击弹出modal2</button>
+        </view>-->
+    </view>
 </view>
 
 

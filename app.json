@@ -1,12 +1,12 @@
 {
   "pages":[
-    "pages/games/games",  
     "pages/missionList/missionList",
+    "pages/messages/messages",
+    "pages/games/games",  
     "pages/index/index",
     "pages/oplottery/oplottery",
     "pages/newRoom/newRoom",
     "pages/missionInnfo/missionInnfo",
-    "pages/messages/messages",  
     "pages/gameOne/gameOne"
   ],
   "window":{
