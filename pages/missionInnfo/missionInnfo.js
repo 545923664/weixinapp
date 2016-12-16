@@ -5,7 +5,8 @@ Page({
     modalHidden2: true,
     gametask:'',
     id :'',
-    userid :''
+    userid :'',
+    disflag:1
   },
   //弹出确认框  
    modalTap: function(e) {
@@ -22,24 +23,22 @@ Page({
      wx.request({
      url: "http://localhost:8080/gameTask/addTaskGold",  
      method: 'GET',
-     data: {userid:userid,id:tid,},  
+     data: {
+       userid:userid,
+       id:tid,
+      },  
      header: {'Content-Type': 'application/json'},  
      success: function(res) {
-          
-          console.log(res)
-
+        console.log(res)
         that.setData({  
-          
           modalHidden: true,  
           toast1Hidden:false,        
           notice_str: '提交成功'
         });
         //确定
         that.modalTap2(e);
-      },
-      
-    })
-    
+      },   
+    })  
   },  
   //点击取消
   cancel_one: function(e) { 
@@ -57,21 +56,23 @@ Page({
   },
   modalTap2: function(e) {
     var that= this;
-    var userid = that.data.userid;
-    var id = that.data.id;
+    var id = that.data.gametask.id;
+    var userid = 9;
     console.log('qqqqqqqqqqqqqqqqqqqqqqqqq***********9999999/res')
     console.log(e)
     wx.request({
               url: 'http://localhost:8080/gameTask/queryOne', 
               data: {
-                userid:userid,
-                id:id
+                id:id,
+                userid:userid
               },
               method: 'GET',
               success: function(res){ 
                   console.info(res);
                     that.setData({
-                    gametask: res.data
+                    gametask: res.data.gametask,
+                    disflag:res.data.disflag,
+                    id:res.data.id,
                   })
               }
       });
@@ -102,7 +103,8 @@ Page({
               success: function(res){ 
                   console.info(res);
                     that.setData({
-                    gametask: res.data,
+                    gametask: res.data.gt,
+                    disflag:res.data.disflag,
                     id:res.data.id,
                     userid:res.data.userid
                   })

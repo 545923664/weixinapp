@@ -19,7 +19,7 @@
                 <view class="game-cont-hidden">
                     <input name="tid"  value="{{gametask.id}}"/>
                 </view>
-                <button class="getmoney" bindtap="modalTap" disabled="{{gametask.taskstatus}}">领取奖励</button>
+                <button class="getmoney" bindtap="modalTap" disabled="{{disflag}}">领取奖励</button>
             </view>
     </view>
 </form>
