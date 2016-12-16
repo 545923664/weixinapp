@@ -21,14 +21,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
+}
+.flex-tixian{
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555555;
+    font-size: 14px;
+
 }
 .man-data{
   border:1px solid;
-  solid:red;
-  font-size:18px;
+  border-color:#e3e3e3;
+  font-size:15px;
 }
 .man-datas{
-  font-size:18px;
+  font-size:15px;
 }
 .flex-zhxx{
   height: 10%;
@@ -53,7 +64,7 @@
 }
 
 .flex-items-list{
-    width: 80px;
+    width: 90px;
     height: 25px;
     display: flex;
     justify-content: center;
