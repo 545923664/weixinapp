@@ -1,25 +1,22 @@
 <!--pages/newRoom/newRoom.wxml-->
-<form>
+<form action="">
     <!--房间名称-->
     <view  class="flex-wrp" style="flex-direction:row;" >
-        <view  class="flex-item1">
-            房间名称
-        </view>
-        <input placeholder="3-10个字" class="flex-item11"/>
+        <view  class="flex-item1">房间名称</view>
+        <input name="roomname" placeholder="3-10个字" class="flex-item11"/>
+    </view>
+    <view  class="flex-wrp1" style="flex-direction:row;" >
+        <view  class="flex-item1">房间标题</view>
+        <input placeholder="10-2个字" class="flex-item11"/>
     </view>
     <!--房间密码-->
     <view  class="flex-wrp1" style="flex-direction:row;" >
-        <view  class="flex-item1">
-            房间密码</view>
+        <view  class="flex-item1"> 房间密码</view>
         <input placeholder="无需密码请跳过" class="flex-item11"/>
     </view>
     <!--button-->
-    <view  class="flex-wrp2" style="flex-direction:row;" >
-        <view  class="flex-itemcj">
-            创建
-        </view>
-        <navigator class="flex-itemqx" url="../games/games">
-            取消
-        </navigator>
+    <view style="display:flex;margin-top:50px;">
+        <button style="width:30%;" formType="submit" >创建</button>
+        <button style="width:30%" formType="reset" >取消</button>
     </view>
 </form>

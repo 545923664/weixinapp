@@ -16,4 +16,12 @@ Page({
   onUnload:function(){
     // 页面关闭
   }
-})
+}), wx.request({
+        url: 'http://localhost:8080/room/roomListAPI', 
+        method: 'GET', 
+        data: {"cityname":"张三"},  
+        success: function(res){  
+        console.info("lujing="+res);
+                  
+    }
+}); 

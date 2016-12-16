@@ -1,5 +1,12 @@
 // pages/messages/messages.js
+<<<<<<< HEAD
 var app = getApp()
+=======
+
+
+var lcPostData='{"id":1,"qty":2}'
+
+>>>>>>> 0ffee7e10f9fe0985529cc5b6665e2780fc81add
 Page({
   data: {
     list: ''
@@ -30,4 +37,18 @@ Page({
   onUnload:function(){
     // 页面关闭
   }
+<<<<<<< HEAD
 })
+=======
+}),
+wx.request({
+          url: 'http://localhost:8080/queryMesage/queryMesage', 
+
+          data: {},  
+          method: 'GET',   
+          success: function(res){  
+          console.info("lujing="+res);  
+           list:res.data      
+          }
+    }); 
+>>>>>>> 0ffee7e10f9fe0985529cc5b6665e2780fc81add
