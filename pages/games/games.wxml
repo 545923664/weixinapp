@@ -1,34 +1,38 @@
+
 <!--pages/games/games.wxml-->
 <view style="margin-left:250rpx;margin-top:20rpx;width:250rpx;">
-    <!--<button style="background:green;">创建房间</button> -->
-    <navigator class="title" url="../newRoom/newRoom"
-                 style="height:100rpx;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;line-height: 50px;" >创建房间</navigator> 
+
+  <!--<button style="background:green;">创建房间</button> -->
+  <navigator class="title" url="../newRoom/newRoom" style="height:100rpx;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;line-height: 50px;">创建房间</navigator>
 </view>
+
 <!--1-->
 <view wx:for="{{list}}">
-    <view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-            <view style="float:left;width:15%;display:inline;">
-                <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
-                            src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
+  <view class="section10">
+    <view class="flex-wrp1s" style="flex-direction:row;">
+      <view class="flex-item6">
+        <image style="height:120rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0" />
+      </view>
+      <view class="section11">
+        <view class="flex-wrp1ps" style="flex-direction:column;">
+          <view class="flex-wrp1p" style="flex-direction:row;">
+            <view class="flex-item61">
+              {{item.roomname}}
             </view>
+            <view class="flex-item62">
+              2/{{item.roompeoplenum}}
+            </view>
+          </view>
+          <view class="flex-item63">
+            {{item.roomtitle}}
+          </view>
+        </view>
+      </view>
+      <view class="buttona" bindtap="clickMe" data-tId="{{item.id}}">
 
-            <view class="section1">
-                <view class="flex-wrp1" style="flex-direction:column;">
-                    <view  class="flex-wrp1" style="flex-direction:row;" >
-                        <view  class="flex-item1">
-                            {{item.roomname}}</view><!--最多8个汉字-->
-                        <view class="flex-item11">
-                    2/{{item.roompeoplenum}}</view>
-                    </view>
-                    <view class="flex-item2">
-                    {{item.roomtitle}}
-                    </view>
-                </view>
-            </view>
-            <!--<button type="primary" bindtap="mytap"  style="width:16%;height:58px;float:right;display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;">加入游戏</button>-->
-            <view bindtap="clickMe" data-tId="{{item.id}}">
-                <navigator class="title" 
-                    style="width:16%;height:58px;line-height:30px;float:right;display:block;border:1rpx solid;background:#ABD0BC;solid:black;text-align:center;margin-top:-120rpx;margin-right:10rpx;" >加入 游戏</navigator> 
-            </view>
+        <!-- <button>加入游戏</button>-->
+        <navigator url="../gameOne/gameOne">加入 游戏</navigator>
+      </view>
     </view>
+  </view>
 </view>
