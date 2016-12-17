@@ -18,9 +18,7 @@
     padding-left: 0;
     padding-right: 0;
 }
-.section__ctn{
-    
-}
+
 .flex-item1{
     width: 300rpx;
     height: 60rpx;

@@ -20,3 +20,84 @@
     display:flex;
     background-color: #FFFFFF;
 }
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.game-section{
+    height: auto;
+    overflow: hidden;
+    margin-top: 40rpx;
+}
+.game-wrap{
+    padding: 32rpx;
+    padding-top: 0;
+}
+.game-info text{
+    font-size: 28rpx;
+}
+.game-info-list{
+    height: auto;
+    overflow: hidden;
+    margin-top: 10rpx;
+}
+.game-info-item{
+    float: left;
+    margin-right: 20rpx
+}
+.game-info-item:last-child{
+    margin-right: 0;
+}
+.game-info-item view{
+    width: 140rpx;
+    height: 140rpx;
+    overflow: hidden;
+}
+.game-info-down{
+    margin-top: 10rpx;
+}
+.game-info-item image{
+   width: 100%;
+   height: 100%;
+}
+.game-list view{
+    width: 130rpx;
+    height: 130rpx;
+    margin-bottom: 10rpx
+}
+.game-list view image{
+    width: 100%;
+    height: 100%;
+}
+
+.game-rule{
+    margin-left: 15rpx;
+    width: 527rpx;
+}
+.game-rule-cont-hidden{
+    padding: 25rpx;
+    font-size: 28rpx;
+    line-height: 50rpx;
+    border: 1px solid #d0d0d0;
+    display: none;
+}
+.game-rule-cont-show{
+    padding: 25rpx;
+    font-size: 28rpx;
+    line-height: 50rpx;
+    border: 1px solid #d0d0d0;
+    display: block;
+}
+.sub-btn{
+    width: 100%;
+    height: 70rpx;
+    color: #fff;
+    border-radius: 5rpx;
+    margin-top: 30rpx;
+    border: none;
+    background: #008051;
+    text-align: center;
+    outline: none;
+}
