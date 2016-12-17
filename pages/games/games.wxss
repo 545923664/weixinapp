@@ -4,6 +4,7 @@
     display:flex;
 }
 .section1{
+    width:67%;
     margin-left: 160rpx;
 }
 .section_gap{
@@ -19,30 +20,129 @@
     padding-right: 0;
 }
 
-.flex-item1{
-    width: 300rpx;
+.flex-wrp1s{
+    margin-top:5rpx;
+    height: 120rpx;
+    display:flex;
+}
+.flex-wrp1p{
+    
+    display:flex;
+}
+.section10{
+    margin-top:20rpx;
+    width:98%;
+}
+.flex-item6{
+    width: 20%;
+    height: 120rpx;
+    display: flex;
+    margin-left:10px;
+    justify-content: center;
+    align-items: center;
+    border:1rpx solid;
+    solid:balck;
+}
+.section11{
+    width:63%;
+    height: 120rpx;
+}
+.flex-item61{
+    width: 65%;
     height: 60rpx;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid;
+    border:1rpx solid;
+    solid:balck;
+}
+.flex-item62{
+    width: 35%;
+    height: 60rpx;
+    margin-left: -1rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1rpx solid;
+    solid:balck;
+}
+.flex-item63{
+    width: 99%;
+    height: 57rpx;
+    margin-top: -1rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1rpx solid;
+    solid:balck;
+}
+.buttona{
+     width:16%;
+     height:120rpx;
+     margin-left: -3rpx;
+     float:right;
+     line-height:60rpx; 
+     display:grey;
+     border:1rpx solid;
+     background:#00a2ea;
+     solid:black;
+     text-align:center;
+     margin-right:10rpx;
+}
+.titles1{
+    width:15%;
+    height:120rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    test-align:center;
+    border:1rpx solid;
+    solid:black;
+    background:#00a2ea;  
+}
+
+
+
+/*
+>>>>>>> 36ce8de392d50e3886e95c54cca719223dc2456d
+.flex-item1{
+    width: 60%;
+    height: 60rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1rpx solid;
     solid:balck;
 }
 .flex-item11{
-    width: 140rpx;
+    width: 28%;
     height: 60rpx;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid;
+    border:1rpx solid;
     solid:balck;
 }
 .flex-item2{
-    width: 445rpx;
-    height: 96rpx;
+    width: 89%;
+    height: 102rpx;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid;
+    border:1rpx solid;
     solid:balck;
 }
+.titles{
+    width:20%;
+    height:118rpx;
+    line-height:58rpx;
+    float:right;
+    display:block;
+    border:1rpx solid;
+    background:#00a2ea;
+    solid:black;
+    text-align:center;
+    margin-top:-120rpx;
+    margin-right:10rpx;
+    
+}*/

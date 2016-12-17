@@ -1,12 +1,13 @@
 //index.js
 //获取应用实例
 var app = getApp()
-Page({
+Page({ 
   data: {
     motto: 'Hello World',
     userInfo: {},
     toView: 'red',
-    scrollTop: 100
+    scrollTop: 100,
+    list: ''
   },
    tap: function(e) {
     for (var i = 0; i < order.length; ++i) {
@@ -23,14 +24,7 @@ Page({
       scrollTop: this.data.scrollTop + 10
     })
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
   onLoad: function () {
-    console.log('onLoad')
     var that = this
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
@@ -38,6 +32,18 @@ Page({
       that.setData({
         userInfo:userInfo
       })
+
+    wx.request({
+    url: 'http://localhost:8080/MyMesage/queryMesage/', 
+    data: {},  
+    method: 'GET',   
+    success: function(res){    
+      that.setData({
+        list: res.data
+      })      
+    }
+    }); 
+
     })
   }
 })

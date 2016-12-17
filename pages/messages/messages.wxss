@@ -1,1 +1,101 @@
 /* pages/messages/messages.wxss */
+.flex-wrp1{
+    height: 120rpx;
+    display:flex;
+}
+.section1{
+    width:67%;
+    margin-left: 160rpx;
+}
+.section_gap{
+    padding: 0 30rpx;
+}
+.section__title{
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.section_gap .section__title{
+    padding-left: 0;
+    padding-right: 0;
+}
+.section__ctn{
+    
+}
+.flex-wrp1s{
+    margin-top:5rpx;
+    height: 120rpx;
+    display:flex;
+}
+.flex-wrp1p{
+    
+    display:flex;
+}
+.flex-wrp1ps{
+    margin-left:1rpx;
+    display:flex;
+}
+.section8{
+    margin-top:100rpx;
+    width:98%;
+}
+.flex-item8{
+    width: 16%;
+    height: 150rpx;
+    display: flex;
+    margin-left:10px;
+    justify-content: center;
+    align-items: center;
+    border:1rpx solid;
+    solid:balck;
+}
+.section11{
+    width:82%;
+    height:200rpx;
+    
+}
+.flex-item61{
+    width: 69%;
+    height: 70rpx;
+     margin-left: -1rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1rpx solid;
+    solid:balck;
+}
+/* */
+.flex-item62{
+    width: 30%;
+    height: 70rpx;
+    float: right;
+    display: flex;
+    margin-left: -1rpx;
+    justify-content: center;
+    align-items: center;
+    border:1rpx solid;
+    solid:balck;
+}
+.flex-item63{
+    width: 99%;
+    height: 130rpx;
+    margin-top: -1rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1rpx solid;
+    solid:balck;
+}
+.buttona{
+     width:16%;
+     height:120rpx;
+     margin-left: -3rpx;
+     float:right;
+     line-height:60rpx; 
+     display:grey;
+     border:1rpx solid;
+     background:#00a2ea;
+     solid:black;
+     text-align:center;
+     margin-right:10rpx;
+}

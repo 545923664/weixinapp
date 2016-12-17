@@ -1,19 +1,119 @@
-// pages/missionInnfo/missionInnfo.js
-var initTxt = '我是在转义换行是在转义换行符后的文字我是在转义换行是在转\n义换行符后的文字我是在转义换行换行'
-            +'是在转义换行符后的文字我是在转义换行是在转义换行符后的文字我是在转义换行符前的换行是在转义换行符后的文字我'
-            +'是在转义换行是在转义换行符后的文字我是在转义换行符前的符前的文字我是在转义换行符后的文字我'
-            +'是在转义换行符是在转义换行符后的文字我是在转义换行是在转义换行符后的文字我是在转义换行后的文字'
-            +'是在转义换行符是在转义换行符后的文字我是在转义换行是在转义换行符后的文字我是在转义换行后的文字'
-            
+// pages/missionInnfo/missionInnfo.js     
 Page({
   data:{
-    txt: initTxt
+    modalHidden: true,
+    modalHidden2: true,
+    gametask:'',
+    id :'',
+    userid :'',
+    disflag:1
+  },
+  //弹出确认框  
+   modalTap: function(e) {
+      this.setData({
+          modalHidden: false
+        })
+  }, 
+  //点击确定 
+  confirm_one: function(e) {  
+    var that = this;
+    var tid = e.currentTarget.dataset.tid;
+    var userid = 9;
+    
+     wx.request({
+     url: "http://localhost:8080/gameTask/addTaskGold",  
+     method: 'GET',
+     data: {
+       userid:userid,
+       id:tid,
+      },  
+     header: {'Content-Type': 'application/json'},  
+     success: function(res) {
+        console.log(res)
+        that.setData({  
+          modalHidden: true,  
+          toast1Hidden:false,        
+          notice_str: '提交成功'
+        });
+        //确定
+        that.modalTap2(e);
+      },   
+    })  
+  },  
+  //点击取消
+  cancel_one: function(e) { 
+    console.log(e);  
+    this.setData({  
+      modalHidden: true,  
+      toast1Hidden:false,  
+      notice_str: '取消成功'  
+    });  
+  }, 
+  modalChange: function(e) {
+    this.setData({
+      modalHidden: true
+    })
+  },
+  modalTap2: function(e) {
+    var that= this;
+    var id = that.data.gametask.id;
+    var userid = 9;
+    console.log('qqqqqqqqqqqqqqqqqqqqqqqqq***********9999999/res')
+    console.log(e)
+    wx.request({
+              url: 'http://localhost:8080/gameTask/queryOne', 
+              data: {
+                id:id,
+                userid:userid
+              },
+              method: 'GET',
+              success: function(res){ 
+                  console.info(res);
+                    that.setData({
+                    gametask: res.data.gametask,
+                    disflag:res.data.disflag,
+                    id:res.data.id,
+                  })
+              }
+      });
+    this.setData({
+      modalHidden2: false
+    })
+  },
+  modalChange2: function(e) {
+    this.setData({
+      modalHidden2: true
+    })
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
-    this.setData({
-      title: options.title
-    })
+    var id = options.id;
+    var userid = 9;
+    var that=this;
+    var tat = options.taskcontent;
+
+    if(id!=''||id!=null){
+      wx.request({
+              url: 'http://localhost:8080/gameTask/queryOne', 
+              data: {
+                userid:userid,
+                id:id
+              },
+              method: 'GET',
+              success: function(res){ 
+                  console.info(res);
+                    that.setData({
+                    gametask: res.data.gt,
+                    disflag:res.data.disflag,
+                    id:res.data.id,
+                    userid:res.data.userid
+                  })
+              }
+      })
+          console.log("参数+=============================="+options.id);
+      }else{
+          console.log("出错了");
+      }
   },
   onReady:function(){
     // 页面渲染完成
@@ -27,14 +127,4 @@ Page({
   onUnload:function(){
     // 页面关闭
   }
-})
-,
-wx.request({
-        url: 'http://localhost:8080/gameTask/queryOne', 
-        data: {},  
-        method: 'GET',   
-        success: function(res){  
-        console.info(res);  
-          data:res.data      
-        }
 })

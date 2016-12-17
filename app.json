@@ -1,5 +1,8 @@
 {
   "pages":[
+    "pages/index/index",
+    "pages/messages/messages",  
+    "pages/missionList/missionList",
     "pages/games/games",  
     "pages/messages/messages",
     "pages/missionList/missionList",
@@ -7,7 +10,9 @@
     "pages/oplottery/oplottery",
     "pages/newRoom/newRoom",
     "pages/missionInnfo/missionInnfo",
-    "pages/gameOne/gameOne"
+    "pages/gameOne/gameOne",
+    "pages/addMoney/addMoney",
+    "pages/pullMoney/pullMoney"
   ],
   "window":{
     "backgroundTextStyle":"light",

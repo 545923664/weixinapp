@@ -1,58 +1,40 @@
-<!--pages/missionList/missionList.wxml-->
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-        <view style="float:left;width:15%;display:inline;">
-            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
-                        src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-        </view>
+<!--pages/missionList/missionList.wxml
+    百分比
 
-        <view class="section1">
-            <view class="flex-wrp1" style="flex-direction:column;">
-                <view  class="flex-wrp1" style="flex-direction:row;" >
-                    <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
-                    <view class="flex-item11">
-                    100金币</view>
-                </view>
-                <view class="flex-item2">
-                   关注公众号【校咖】...
+<view class="listview">
+   <view  wx:for="{{datas}}">
+        <view style="width:95%;margin-left:10rpx;height:120rpx;margin-top:10px;" >
+            <view style="float:left;width:15%;display:inline;">
+                <image  style="width:150rpx;height:120rpx;margin-left:10rpx;" src="{{item.tasklink}}"/>
+            </view>
+            <view class="section1">
+                <view class="flex-wrp1" style="flex-direction:column;">
+                    <view  class="flex-wrp1" style="flex-direction:row;" >
+                        <view  class="flex-item1">
+                            {{item.tasktype}}
+                        </view>
+                        <view class="flex-item11">
+                            {{item.taskgold}}
+                        </view>
+                    </view>
+                    <view class="flex-item2">
+                        {{item.tasktitle}}
+                    </view>
                 </view>
             </view>
-        </view>
-        <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right;line-height:30px; display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
-                        查看 详情
-            </navigator> 
-        </view>
-</view>
-
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-        <view style="float:left;width:15%;display:inline;">
-            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
-                        src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-        </view>
-
-        <view class="section1">
-            <view class="flex-wrp1" style="flex-direction:column;">
-                <view  class="flex-wrp1" style="flex-direction:row;" >
-                    <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
-                    <view class="flex-item11">
-                    100金币</view>
-                </view>
-                <view class="flex-item2">
-                   关注公众号【校咖】...
-                </view>
+            <view>
+                <navigator class="title" url="../missionInnfo/missionInnfo?id={{item.id}}   "
+                        style="width:16%;height:58px;float:right;line-height:30px; display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
+                            查看 详情{{item.id}}
+                </navigator> 
             </view>
         </view>
-        <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right;line-height:30px; display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
-                        查看 详情
-            </navigator> 
-        </view>
-</view>
+   </view>
+</view>-->
 
+<!--备份
+<view class="listview">
+   <view  wx:for="{{datas}}">
 <view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
         <view style="float:left;width:15%;display:inline;">
             <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
@@ -63,93 +45,12 @@
             <view class="flex-wrp1" style="flex-direction:column;">
                 <view  class="flex-wrp1" style="flex-direction:row;" >
                     <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
+                        {{item.tasktype}}</view>
                     <view class="flex-item11">
-                    100金币</view>
+                    {{item.taskgold}}</view>
                 </view>
                 <view class="flex-item2">
-                   关注公众号【校咖】...
-                </view>
-            </view>
-        </view>
-        <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right;line-height:30px; display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
-                        查看 详情
-            </navigator> 
-        </view>
-</view>
-
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-        <view style="float:left;width:15%;display:inline;">
-            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
-                        src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-        </view>
-
-        <view class="section1">
-            <view class="flex-wrp1" style="flex-direction:column;">
-                <view  class="flex-wrp1" style="flex-direction:row;" >
-                    <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
-                    <view class="flex-item11">
-                    100金币</view>
-                </view>
-                <view class="flex-item2">
-                   关注公众号【校咖】...
-                </view>
-            </view>
-        </view>
-        <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right;line-height:30px; display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
-                        查看 详情
-            </navigator> 
-        </view>
-</view>
-
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-        <view style="float:left;width:15%;display:inline;">
-            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
-                        src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-        </view>
-
-        <view class="section1">
-            <view class="flex-wrp1" style="flex-direction:column;">
-                <view  class="flex-wrp1" style="flex-direction:row;" >
-                    <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
-                    <view class="flex-item11">
-                    100金币</view>
-                </view>
-                <view class="flex-item2">
-                   关注公众号【校咖】...
-                </view>
-            </view>
-        </view>
-        <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right;line-height:30px; display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
-                        查看 详情
-            </navigator> 
-        </view>
-</view>
-
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-        <view style="float:left;width:15%;display:inline;">
-            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
-                        src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-        </view>
-
-        <view class="section1">
-            <view class="flex-wrp1" style="flex-direction:column;">
-                <view  class="flex-wrp1" style="flex-direction:row;" >
-                    <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
-                    <view class="flex-item11">
-                    100金币</view>
-                </view>
-                <view class="flex-item2">
-                   关注公众号【校咖】...
+                  {{item.tasktitle}}
                 </view>
             </view>
         </view>
@@ -160,165 +61,179 @@
             </navigator> 
         </view>
 </view>
-
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-        <view style="float:left;width:15%;display:inline;">
-            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
-                        src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-        </view>
-
-        <view class="section1">
-            <view class="flex-wrp1" style="flex-direction:column;">
-                <view  class="flex-wrp1" style="flex-direction:row;" >
-                    <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
-                    <view class="flex-item11">
-                    100金币</view>
+   </view>
+</view>
+-->
+<view class="listview">
+   <view  wx:for="{{datas}}">
+        <view class="section10">
+            <view  class="flex-wrp1s" style="flex-direction:row;" >
+                <view class="flex-item6">
+                    <image  style="height:120rpx;"
+                                src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
                 </view>
-                <view class="flex-item2">
-                   关注公众号【校咖】...
+                <view class="section11">
+                    <view class="flex-wrp1ps" style="flex-direction:column;">
+                        <view  class="flex-wrp1p" style="flex-direction:row;">
+                            <view class="flex-item61">
+                                <view wx:if="{{item.tasktype==1}}"> 系统消息 </view>
+                                <view wx:elif="{{item.tasktype==2}}"> 个人消息 </view>
+                                <view wx:else> zzzii</view> 
+                            </view>
+                            <view class="flex-item62">
+                                {{item.taskgold}}金币
+                            </view>                   
+                        </view>
+                        <view class="flex-item63">
+                            {{item.tasktitle}}
+                        </view>
+                    </view>
+                </view>
+                <view class="buttona">
+                <!-- <button>加入游戏</button>-->
+                    <navigator  url="../missionInnfo/missionInnfo?id={{item.id}}" >查看  详情</navigator> 
                 </view>
             </view>
         </view>
-        <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right; display:block;border:1rpx solid;background:#00a2ea;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
-                        查看 详情
-            </navigator> 
-        </view>
+   </view>
 </view>
 
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-        <view style="float:left;width:15%;display:inline;">
-            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
+
+
+
+<view class="section10">
+    <view  class="flex-wrp1s" style="flex-direction:row;" >
+        <view class="flex-item6">
+            <image  style="height:120rpx;"
                         src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
         </view>
-
-        <view class="section1">
-            <view class="flex-wrp1" style="flex-direction:column;">
-                <view  class="flex-wrp1" style="flex-direction:row;" >
-                    <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
-                    <view class="flex-item11">
-                    100金币</view>
+        <view class="section11">
+            <view class="flex-wrp1ps" style="flex-direction:column;">
+                <view  class="flex-wrp1p" style="flex-direction:row;">
+                    <view class="flex-item61">
+                        愤怒的小鸡
+                    </view>
+                    <view class="flex-item62">
+                        2/4
+                    </view>                   
                 </view>
-                <view class="flex-item2">
-                   关注公众号【校咖】...
+                <view class="flex-item63">
+                    想玩的速度加入
                 </view>
             </view>
         </view>
-        <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right; display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
-                        查看 详情
-            </navigator> 
+        <view class="buttona">
+           <!-- <button>加入游戏</button>-->
+            <navigator  url="../missionInnfo/missionInnfo?id={{item.id}}" >查看  详情</navigator> 
         </view>
+    </view>
 </view>
 
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-        <view style="float:left;width:15%;display:inline;">
-            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
+<view class="section10">
+    <view  class="flex-wrp1s" style="flex-direction:row;" >
+        <view class="flex-item6">
+            <image  style="height:120rpx;"
                         src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
         </view>
-
-        <view class="section1">
-            <view class="flex-wrp1" style="flex-direction:column;">
-                <view  class="flex-wrp1" style="flex-direction:row;" >
-                    <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
-                    <view class="flex-item11">
-                    100金币</view>
+        <view class="section11">
+            <view class="flex-wrp1ps" style="flex-direction:column;">
+                <view  class="flex-wrp1p" style="flex-direction:row;">
+                    <view class="flex-item61">
+                        愤怒的小鸡
+                    </view>
+                    <view class="flex-item62">
+                        2/4
+                    </view>                   
                 </view>
-                <view class="flex-item2">
-                   关注公众号【校咖】...
+                <view class="flex-item63">
+                    想玩的速度加入
                 </view>
             </view>
         </view>
-        <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right; display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
-                        查看 详情
-            </navigator> 
+        <view class="buttona">
+           <!-- <button>加入游戏</button>-->
+            <navigator  url="../missionInnfo/missionInnfo?id={{item.id}}" >查看  详情</navigator> 
         </view>
+    </view>
 </view>
-
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-        <view style="float:left;width:15%;display:inline;">
-            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
+<view class="section10">
+    <view  class="flex-wrp1s" style="flex-direction:row;" >
+        <view class="flex-item6">
+            <image  style="height:120rpx;"
                         src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
         </view>
-
-        <view class="section1">
-            <view class="flex-wrp1" style="flex-direction:column;">
-                <view  class="flex-wrp1" style="flex-direction:row;" >
-                    <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
-                    <view class="flex-item11">
-                    100金币</view>
+        <view class="section11">
+            <view class="flex-wrp1ps" style="flex-direction:column;">
+                <view  class="flex-wrp1p" style="flex-direction:row;">
+                    <view class="flex-item61">
+                        愤怒的小鸡
+                    </view>
+                    <view class="flex-item62">
+                        2/4
+                    </view>                   
                 </view>
-                <view class="flex-item2">
-                   关注公众号【校咖】...
+                <view class="flex-item63">
+                    想玩的速度加入
                 </view>
             </view>
         </view>
-        <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right; display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
-                        查看 详情
-            </navigator> 
+        <view class="buttona">
+           <!-- <button>加入游戏</button>-->
+            <navigator  url="../missionInnfo/missionInnfo?id={{item.id}}" >查看  详情</navigator> 
         </view>
+    </view>
 </view>
-
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-        <view style="float:left;width:15%;display:inline;">
-            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
+<view class="section10">
+    <view  class="flex-wrp1s" style="flex-direction:row;" >
+        <view class="flex-item6">
+            <image  style="height:120rpx;"
                         src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
         </view>
-
-        <view class="section1">
-            <view class="flex-wrp1" style="flex-direction:column;">
-                <view  class="flex-wrp1" style="flex-direction:row;" >
-                    <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
-                    <view class="flex-item11">
-                    100金币</view>
+        <view class="section11">
+            <view class="flex-wrp1ps" style="flex-direction:column;">
+                <view  class="flex-wrp1p" style="flex-direction:row;">
+                    <view class="flex-item61">
+                        愤怒的小鸡
+                    </view>
+                    <view class="flex-item62">
+                        2/4
+                    </view>                   
                 </view>
-                <view class="flex-item2">
-                   关注公众号【校咖】...
+                <view class="flex-item63">
+                    想玩的速度加入
                 </view>
             </view>
         </view>
-        <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right; display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
-                        查看 详情
-            </navigator> 
+        <view class="buttona">
+           <!-- <button>加入游戏</button>-->
+            <navigator  url="../missionInnfo/missionInnfo?id={{item.id}}" >查看  详情</navigator> 
         </view>
+    </view>
 </view>
-
-<view style="width:98%;margin-left:10rpx;height:120rpx;margin-top:10px;">
-        <view style="float:left;width:15%;display:inline;">
-            <image  style="width:150rpx;height:120rpx;margin-left:10rpx;"
+<view class="section10">
+    <view  class="flex-wrp1s" style="flex-direction:row;" >
+        <view class="flex-item6">
+            <image  style="height:120rpx;"
                         src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
         </view>
-
-        <view class="section1">
-            <view class="flex-wrp1" style="flex-direction:column;">
-                <view  class="flex-wrp1" style="flex-direction:row;" >
-                    <view  class="flex-item1">
-                        普通任务</view><!--最多8个汉字-->
-                    <view class="flex-item11">
-                    100金币</view>
+        <view class="section11">
+            <view class="flex-wrp1ps" style="flex-direction:column;">
+                <view  class="flex-wrp1p" style="flex-direction:row;">
+                    <view class="flex-item61">
+                        愤怒的小鸡
+                    </view>
+                    <view class="flex-item62">
+                        2/4
+                    </view>                   
                 </view>
-                <view class="flex-item2">
-                   关注公众号【校咖】...
+                <view class="flex-item63">
+                    想玩的速度加入
                 </view>
             </view>
         </view>
-        <view>
-            <navigator class="title" url="../missionInnfo/missionInnfo?title=关注公众号【校咖】..."
-                    style="width:16%;height:58px;float:right; display:block;border:1rpx solid;background:green;solid:black;text-align:center;margin-top:-60px;margin-right:10rpx;" >
-                        查看 详情
-            </navigator> 
+        <view class="buttona">
+           <!-- <button>加入游戏</button>-->
+            <navigator  url="../missionInnfo/missionInnfo?id={{item.id}}" >查看  详情</navigator> 
         </view>
+    </view>
 </view>
