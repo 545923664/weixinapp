@@ -1,9 +1,26 @@
 /* pages/newRoom/newRoom.wxss */
+.container1 {
+    background: #eee;
+    background-size: cover;
+    background-image: url(/images/newroom.png);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+input {
+  border-bottom: 1rpx solid #1AAD19;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+}
 .flex-wrp{
     height: 40rpx;
     display:flex;
-    margin-top:25%;
+    margin-top:0%;
     margin-left:10%;
+    margin-top:25%;
 }
 .flex-wrp1{
     height: 40rpx;
@@ -37,44 +54,37 @@
     
 }
 .flex-item1{
-    width: 150rpx;
+    width: 180rpx;
     height: 60rpx;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid;
-    solid:balck;
-    background:#00a2ea;
+
 }
 .flex-itemcj{
     width: 180rpx;
-    height: 60rpx;
+    height: 70rpx;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid;
-    solid:balck;
-    background:#00a2ea;
+
 }
 .flex-itemqx{
-    width: 180rpx;
-    height: 60rpx;
+    width: 160rpx;
+    height: 70rpx;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid;
-    solid:balck;
     margin-left: 30rpx;
-    background:#00a2ea;
+
 }
 .flex-item11{
-    width: 450rpx;
+    width: 430rpx;
     height: 60rpx;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid;
-    solid:balck;
+
     margin-left:20rpx;
 }
 .flex-item2{

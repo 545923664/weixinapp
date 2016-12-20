@@ -32,4 +32,5 @@ wx.request({
           console.info("lujing="+res);  
            list:res.data      
           }
-    }); 
+    });
+     

@@ -1,4 +1,5 @@
 <!--index.wxml-->
+
 <view class="flex-wrp" style="margin-left:5px;flex-direction:row;">
   <view class="flex-item bc_red">
     <image  style=" width: 260rpx;height:260rpx;" src="{{userInfo.avatarUrl}}"/>
@@ -260,4 +261,3 @@
  </view>
 </view>
  </scroll-view>
-

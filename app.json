@@ -1,6 +1,5 @@
 {
   "pages":[
-
     "pages/games/games",  
     "pages/messages/messages",
     "pages/missionList/missionList",
@@ -12,14 +11,15 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "rgba(215, 215, 215, 1)",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "动力威视-青蛙游戏",
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {  
    "color": "#a9b7b7",  
-   "selectedColor": "#11cd6e",  
+   "selectedColor": "red",  
    "borderStyle":"white",  
+
    "list": [{  
      "selectedIconPath": "images/yxtc.png",  
      "iconPath": "images/yx.png",  
