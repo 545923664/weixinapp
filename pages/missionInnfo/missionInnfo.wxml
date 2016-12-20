@@ -1,5 +1,6 @@
 <!--pages/missionInnfo/missionInnfo.wxml-->
 <form >
+
     <view class="listview">
             <view>
                 <span style="font-size:24px;">
@@ -21,7 +22,7 @@
                 </view>
                 <button class="getmoney" bindtap="modalTap" disabled="{{disflag}}">领取奖励</button>
             </view>
-    </view>
+</view>
 </form>
 <view class="page">
     <view class="page__bd">

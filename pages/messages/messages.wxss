@@ -1,6 +1,6 @@
 /* pages/messages/messages.wxss */
 .flex-wrp1{
-    height: 120rpx;
+    height: 150rpx;
     display:flex;
 }
 .section1{
@@ -24,78 +24,48 @@
 }
 .flex-wrp1s{
     margin-top:5rpx;
-    height: 120rpx;
+    height: 150rpx;
     display:flex;
 }
 .flex-wrp1p{
-    
+    margin-left: 20rpx;
     display:flex;
 }
-.flex-wrp1ps{
-    margin-left:1rpx;
-    display:flex;
-}
-.section8{
-    margin-top:100rpx;
+.section10{
+    margin-top:20rpx;
     width:98%;
 }
-.flex-item8{
-    width: 16%;
-    height: 150rpx;
+.flex-item6{
+    width: 20%;
+    height: 120rpx;
     display: flex;
-    margin-left:10px;
+    margin:20rpx 10rpx;
     justify-content: center;
     align-items: center;
-    border:1rpx solid;
-    solid:balck;
 }
 .section11{
-    width:82%;
-    height:200rpx;
-    
+    width:78%;
+    height: 120rpx;
+
 }
 .flex-item61{
-    width: 69%;
-    height: 70rpx;
-     margin-left: -1rpx;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border:1rpx solid;
-    solid:balck;
+    width: 75%;
+    height: 50rpx;
+    display: flex; 
+    font-size: 29rpx; 
+   
 }
-/* */
 .flex-item62{
-    width: 30%;
-    height: 70rpx;
-    float: right;
-    display: flex;
-    margin-left: -1rpx;
-    justify-content: center;
-    align-items: center;
-    border:1rpx solid;
-    solid:balck;
+    width:25%;
+    height: 50rpx; 
+    font-size: 29rpx; 
+    
 }
 .flex-item63{
     width: 99%;
-    height: 130rpx;
-    margin-top: -1rpx;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border:1rpx solid;
-    solid:balck;
-}
-.buttona{
-     width:16%;
-     height:120rpx;
-     margin-left: -3rpx;
-     float:right;
-     line-height:60rpx; 
-     display:grey;
-     border:1rpx solid;
-     background:#00a2ea;
-     solid:black;
-     text-align:center;
-     margin-right:10rpx;
+    height: 100rpx;
+    display: flex;   
+    margin-top: 6rpx;
+    margin-left: 20rpx;
+    font-size: 38rpx; 
 }

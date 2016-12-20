@@ -24,3 +24,4 @@
 <view>{{roomTitle}}</view>
 <view>{{roomPwd}}</view>
 <toast duration="2000" hidden="{{toastHidden}}" bindchange="toastBindChange">用户名或密码不能为空！</toast> 
+

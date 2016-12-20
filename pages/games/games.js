@@ -36,7 +36,12 @@ Page({
   onShow: function () {
     // 页面显示
   },
-  onHide: function () {
+  bindViewTap: function() {
+    wx.navigateTo({
+      url: '../newRoom/newRoom'
+    })
+  },
+  onHide:function(){
     // 页面隐藏
   },
   onUnload: function () {

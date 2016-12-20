@@ -1,4 +1,26 @@
-
+.yxdt{
+    background: light;
+    background-size: contain;
+    min-height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+   }
+.newroom{
+    height:100rpx;
+    solid:black;
+    text-align:center;
+    line-height: 50px;
+    margin-top: 40rpx;
+}
+.avatar {
+    width: 100px;
+    height: 50px;
+    border-radius: 8%;
+    margin-top: 40rpx;
+}
 .flex-wrp1{
     height: 120rpx;
     display:flex;
@@ -33,7 +55,7 @@
 }
 .section10{
     margin-top:20rpx;
-    width:98%;
+    width:100%;
 }
 .flex-item6{
     width: 20%;
@@ -42,41 +64,28 @@
     margin-left:10px;
     justify-content: center;
     align-items: center;
-    border:1rpx solid;
-    solid:balck;
 }
 .section11{
-    width:63%;
+    width:80%;
     height: 120rpx;
 }
 .flex-item61{
-    width: 65%;
+
     height: 60rpx;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border:1rpx solid;
-    solid:balck;
+    display: flex;  
+    margin-left: 20rpx;
 }
 .flex-item62{
-    width: 35%;
+ 
     height: 60rpx;
-    margin-left: -1rpx;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border:1rpx solid;
-    solid:balck;
+    margin-left: 250rpx;
 }
 .flex-item63{
-    width: 99%;
+
     height: 57rpx;
     margin-top: -1rpx;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border:1rpx solid;
-    solid:balck;
+    margin-left: 25rpx;
 }
 .buttona{
      width:16%;
@@ -85,7 +94,7 @@
      float:right;
      line-height:60rpx; 
      display:grey;
-     border:1rpx solid;
+     
      background:#00a2ea;
      solid:black;
      text-align:center;
@@ -98,9 +107,8 @@
     justify-content: center;
     align-items: center;
     test-align:center;
-    border:1rpx solid;
+    
     solid:black;
     background:#00a2ea;  
 }
-
 
