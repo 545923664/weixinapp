@@ -1,9 +1,9 @@
 {
   "pages":[
+    "pages/games/games", 
     "pages/index/index",
     "pages/messages/messages",  
     "pages/missionList/missionList",
-    "pages/games/games",  
     "pages/messages/messages",
     "pages/missionList/missionList",
     "pages/index/index",
@@ -12,7 +12,8 @@
     "pages/missionInnfo/missionInnfo",
     "pages/gameOne/gameOne",
     "pages/addMoney/addMoney",
-    "pages/pullMoney/pullMoney"
+    "pages/pullMoney/pullMoney",
+    "pages/olottery/olottery"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -27,7 +28,7 @@
    "list": [{  
      "selectedIconPath": "images/yxtc.png",  
      "iconPath": "images/yx.png",  
-     "pagePath": "pages/games/games",  
+     "pagePath": "pages/games/games",
      "text": "游戏"  
    }, {  
      "selectedIconPath": "images/rrtc.png",  

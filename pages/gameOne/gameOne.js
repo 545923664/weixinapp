@@ -1,9 +1,27 @@
 // pages/gameOne/gameOne.js
 //获取应用实例
 var app = getApp()
+function countdown(that,rId) {  
+ var second = that.data.second  
+ if (second <= 0) {  
+  that.setData({  
+   second: "游戏开始..."  
+  });  
+ setTimeout(function () {
+                that.quit(rId);
+              }, 3000);  
+  return; 
+ }
+  
+ var time = setTimeout(function(){  
+  that.setData({  
+   second: second - 1  
+  });  
+  countdown(that,rId);  
+ }  
+ ,1000)  
+}  
 Page({
-
-
   selected: function (e) {
     this.menu_static = e.currentTarget.id;
     var ruleId = e.currentTarget.dataset.ruleid;
@@ -16,6 +34,7 @@ Page({
         console.log(res.data)
         that.setData({
           ruleInfo: res.data.gameRuleInfo,
+          imgurl: res.data.gameRuleInfo.imgurl,
           odds: res.data.odds
         });
       }
@@ -41,9 +60,6 @@ Page({
         }
       }
     });
-
-
-
     /*  wx.connectSocket({
        url: 'ws://192.168.15.118:8080/oss/mywebsocket.do'
      })
@@ -56,13 +72,48 @@ Page({
      })*/
 
   },
+  quit: function (rId) {
+    console.log("aaaaaaaaaaaaaaaaaaaaaa" +rId);
+    this.setData({
+      loadingHidden: true
+    });
+    //跳转到指定页面  不关闭当前页面
+    wx.redirectTo({
+      url: '../olottery/olottery?roomId='+rId
+    })
+
+  },
+  quitGame: function (e) {
+    var infoid = e.currentTarget.dataset.infoid;
+    var userId = e.currentTarget.dataset.userid;
+    var that = this;
+
+    wx.request({
+      url: 'http://localhost:8080/room/quitRoom',
+      method: 'GET',
+      data: { infoid: infoid, userId: userId },
+      success: function (res) {
+        console.log(res.data.flag)
+
+        wx.sendSocketMessage({
+          data: true
+        })
+      }
+    });
+
+
+  },
+  
   data: {
     userInfo: {},
     roles: '',
     ruleInfo: '',
     odds: '',
     roomId: '',
-    gameusers: {}
+    gameusers: {},
+    imgurl: '',
+    loadingHidden: true,
+    second: 10  
   },
   tap: function (e) {
     for (var i = 0; i < order.length; ++i) {
@@ -96,13 +147,14 @@ Page({
     wx.request({
       url: 'http://localhost:8080/gameRuleInfo/getGameRuleInfos',
       method: 'GET',
-      data: {},
+      data: { roomId: rId },
       success: function (res) {
         console.log(res.data.gameRuleInfos)
         that.setData({
           roles: res.data.gameRuleInfos,
           ruleInfo: res.data.gameRuleInfo,
-          odds: res.data.odds
+          odds: res.data.odds,
+          gameusers: res.data.infos
         });
       }
     });
@@ -112,6 +164,9 @@ Page({
     })
     wx.onSocketOpen(function (res) {
       console.log('WebSocket连接已打开！')
+      wx.sendSocketMessage({
+        data: true
+      })
     })
     wx.onSocketError(function (res) {
       console.log('WebSocket连接打开失败，请检查！')
@@ -126,10 +181,30 @@ Page({
           method: 'GET',
           data: { roomId: rId },
           success: function (res) {
-            console.log(res.data.infos)
+
             that.setData({
               gameusers: res.data.infos
             });
+            if (res.data.infos.length == 3) {
+              console.log("**********************" + res.data.infos.length)
+              that.setData({
+                loadingHidden: false
+              });
+              countdown(that,rId)
+              /*setTimeout(function () {
+                that.quit(rId);
+              }, 3000);
+               that.setData({
+                 loadingHidden: false
+               });
+               var that = this;
+               setTimeout(function () {
+                 that.setData({
+                   loadingHidden: true
+                 });
+                 that.quit(rId);
+               }, 3000);*/
+            }
           }
         });
       }

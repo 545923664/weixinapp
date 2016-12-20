@@ -11,7 +11,7 @@
   <view class="section10">
     <view class="flex-wrp1s" style="flex-direction:row;">
       <view class="flex-item6">
-        <image style="height:120rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0" />
+        <image style="height:120rpx;" src="{{item.headimgurl}}" />
       </view>
       <view class="section11">
         <view class="flex-wrp1ps" style="flex-direction:column;">
@@ -20,7 +20,7 @@
               {{item.roomname}}
             </view>
             <view class="flex-item62">
-              2/{{item.roompeoplenum}}
+              {{item.cou}}/{{item.roompeoplenum}}
             </view>
           </view>
           <view class="flex-item63">
@@ -28,11 +28,15 @@
           </view>
         </view>
       </view>
-      <view class="buttona" bindtap="clickMe" data-tId="{{item.id}}">
+      <view class="buttona" bindtap="clickMe" data-num="{{item.roompeoplenum}}" data-cou="{{item.cou}}" data-tId="{{item.id}}">
 
         <!-- <button>加入游戏</button>-->
-        <navigator url="../gameOne/gameOne">加入 游戏</navigator>
+        <navigator>加入 游戏</navigator>
       </view>
     </view>
   </view>
+</view>
+<view>
+  <modal title="提示框" hidden="{{modalHidden}}" confirm-text="确定" cancel-text="取消"
+  bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">是否要新建房间？</modal>
 </view>
