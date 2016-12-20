@@ -1,0 +1,25 @@
+<form bindsubmit="bindSub">
+    <!--余额-->
+    <view  class="flex-wrp" style="flex-direction:row;" >
+        <view  class="flex-item1">
+            余额
+        </view>
+        <input placeholder="{{balance1}}" class="flex-item11"/>
+    </view>
+    <!--充值金额-->
+    <view  class="flex-wrp1" style="flex-direction:row;" >
+        <view  class="flex-item1">
+            提现金额
+        </view>
+        <input  name="money" placeholder="提现金额不得大于余额" class="flex-item11"/>
+    </view>
+    <!--button-->
+    <view  class="flex-wrp2" style="flex-direction:row;" >
+        <button form-type="submit" class="flex-itemcj">
+            确定
+        </button>
+        <button bindtap="bindBack" class="flex-itemqx" url="../games/games">
+            返回
+        </button>
+    </view>
+</form>

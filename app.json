@@ -7,7 +7,9 @@
     "pages/oplottery/oplottery",
     "pages/newRoom/newRoom",
     "pages/missionInnfo/missionInnfo",
-    "pages/gameOne/gameOne"
+    "pages/gameOne/gameOne",
+    "pages/addMoney/addMoney",
+    "pages/pullMoney/pullMoney"
   ],
   "window":{
     "backgroundTextStyle":"light",

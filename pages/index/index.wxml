@@ -5,22 +5,23 @@
     <image  style=" width: 260rpx;height:260rpx;" src="{{userInfo.avatarUrl}}"/>
   </view>
 
+
 <view class="flex-wrps" style="flex-direction:column;margin-left:10px;">
   <view class="flex-wrps" style="flex-direction:row;">
     <view class="flex-items man-data" >
       昵称
     </view>
-    <view  class="flex-items" style="font-size:18px;">
-      Vivan
+    <view  class="flex-items">
+       {{list.myMesage.nickname}}
     </view>
   </view>
 
   <view class="flex-wrps" style="flex-direction:row;">
     <view class="flex-items man-data">
-      性别
+      性别 
     </view>
     <view  class="flex-items">
-      男
+      {{list.myMesage.sex}}
     </view>
   </view>
   <view class="flex-wrps" style="flex-direction:row;">
@@ -28,7 +29,7 @@
       地区
     </view>
     <view  class="flex-items">
-      北京
+      {{list.myMesage.address}}
     </view>
   </view>
 
@@ -37,11 +38,13 @@
       游戏等级
     </view>
     <view  class="flex-items">
-      王者荣耀
+      {{list.myMesage.level}}
     </view>
    </view>
   </view>
 </view><!--顶部-->
+
+
 
 <view class="flex-wrps" style="flex-direction:column;margin-left:5px;">
   <view class="flex-wrps" style="flex-direction:row;">
@@ -49,7 +52,7 @@
       账号余额
     </view>
     <view  class="flex-items" style="font-size:18px;">
-      100000金币
+       {{list.balance}}金币
     </view>
   </view>
 
@@ -58,7 +61,7 @@
       游戏场次
     </view>
     <view  class="flex-items">
-      99999场
+     {{list.num}}场
     </view>
   </view>
   <view class="flex-wrps" style="flex-direction:row;">
@@ -66,7 +69,7 @@
       胜率
     </view>
     <view  class="flex-items">
-      100%
+      {{list.result}}%
     </view>
   </view>
 
@@ -74,12 +77,12 @@
     <view class="flex-items man-data" >
       账号操作
     </view>
-    <view  class="flex-items">
-      提现
-    </view>
-    <view  class="flex-items">
+    <navigator  url="../addMoney/addMoney" class="flex-tixian" >
       充值
-    </view>
+    </navigator>
+    <navigator url="../pullMoney/pullMoney"  class="flex-tixian" >
+      提现
+    </navigator>
    </view>
 </view><!--账号余额-->
 
@@ -105,159 +108,23 @@
       游戏结果
     </view>
 </view>
+
+
+<view wx:for="{{list.gaminfoList}}">
  <view class="flex-wrps-list" style="flex-direction:row;">
-    <view class="flex-items-list ">
-       18:11:03
+    <view class="flex-items-list sty">
+       {{item.time}} 
     </view>
     <view  class="flex-items-list">
-      4051
+       {{item.roomname}}
     </view>
     <view  class="flex-items-list">
-      小鸡
+       {{item.userbet}}
     </view>
     <view  class="flex-items-list">
-      小鸭
+       {{item.lotteryresults}}
     </view>
- </view>
- <view class="flex-wrps-list" style="flex-direction:row;">
-    <view class="flex-items-list ">
-       18:11:03
-    </view>
-    <view  class="flex-items-list">
-      4051
-    </view>
-    <view  class="flex-items-list">
-      小鸡
-    </view>
-    <view  class="flex-items-list">
-      小鸭
-    </view>
- </view>
- <view class="flex-wrps-list" style="flex-direction:row;">
-    <view class="flex-items-list ">
-       18:11:03
-    </view>
-    <view  class="flex-items-list">
-      4051
-    </view>
-    <view  class="flex-items-list">
-      小鸡
-    </view>
-    <view  class="flex-items-list">
-      小鸭
-    </view>
- </view>
- <view class="flex-wrps-list" style="flex-direction:row;">
-    <view class="flex-items-list ">
-       18:11:03
-    </view>
-    <view  class="flex-items-list">
-      4051
-    </view>
-    <view  class="flex-items-list">
-      小鸡
-    </view>
-    <view  class="flex-items-list">
-      小鸭
-    </view>
- </view>
- <view class="flex-wrps-list" style="flex-direction:row;">
-    <view class="flex-items-list ">
-       18:11:03
-    </view>
-    <view  class="flex-items-list">
-      4051
-    </view>
-    <view  class="flex-items-list">
-      小鸡
-    </view>
-    <view  class="flex-items-list">
-      小鸭
-    </view>
- </view>
- <view class="flex-wrps-list" style="flex-direction:row;">
-    <view class="flex-items-list ">
-       18:11:03
-    </view>
-    <view  class="flex-items-list">
-      4051
-    </view>
-    <view  class="flex-items-list">
-      小鸡
-    </view>
-    <view  class="flex-items-list">
-      小鸭
-    </view>
- </view>
- <view class="flex-wrps-list" style="flex-direction:row;">
-    <view class="flex-items-list ">
-       18:11:03
-    </view>
-    <view  class="flex-items-list">
-      4051
-    </view>
-    <view  class="flex-items-list">
-      小鸡
-    </view>
-    <view  class="flex-items-list">
-      小鸭
-    </view>
- </view>
- <view class="flex-wrps-list" style="flex-direction:row;">
-    <view class="flex-items-list ">
-       18:11:03
-    </view>
-    <view  class="flex-items-list">
-      4051
-    </view>
-    <view  class="flex-items-list">
-      小鸡
-    </view>
-    <view  class="flex-items-list">
-      小鸭
-    </view>
- </view>
- <view class="flex-wrps-list" style="flex-direction:row;">
-    <view class="flex-items-list ">
-       18:11:03
-    </view>
-    <view  class="flex-items-list">
-      4051
-    </view>
-    <view  class="flex-items-list">
-      小鸡
-    </view>
-    <view  class="flex-items-list">
-      小鸭
-    </view>
- </view>
- <view class="flex-wrps-list" style="flex-direction:row;">
-    <view class="flex-items-list ">
-       18:11:03
-    </view>
-    <view  class="flex-items-list">
-      4051
-    </view>
-    <view  class="flex-items-list">
-      小鸡
-    </view>
-    <view  class="flex-items-list">
-      小鸭
-    </view>
- </view>
- <view class="flex-wrps-list" style="flex-direction:row;">
-    <view class="flex-items-list ">
-       18:11:03
-    </view>
-    <view  class="flex-items-list">
-      4051
-    </view>
-    <view  class="flex-items-list">
-      小鸡
-    </view>
-    <view  class="flex-items-list">
-      小鸭
-    </view>
+  </view>
  </view>
 </view>
  </scroll-view>

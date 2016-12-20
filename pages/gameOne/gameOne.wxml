@@ -1,57 +1,44 @@
-<view style="width:100%;height:20%; margin-left:5px;">
-<!--四个用户-->
-    <view style="width:200rpx;height:200rpx;display:inline;margin-left:5px;">
-        <image  style=" width: 170rpx;height:130rpx;" src="{{userInfo.avatarUrl}}"/>
+<view class="game-wrap">
+  <view class="game-section game-info">
+    <text>玩家信息（点击个人头像查看）</text>
+    <view class="game-info-list">
+      <view class="game-info-item">
+        <view>
+          <image src="{{userInfo.avatarUrl}}"></image>
+        </view>
+         <view class="game-info-down">
+          <image src="{{ruleInfo.imgurl}}"></image>
+        </view>
+      </view>
+
+      <view wx:for="{{gameusers}}">
+        <view class="game-info-item">
+          <view>
+            <image src="{{item.headimgurl}}"></image>
+          </view>
+          <view class="game-info-down">
+            <image src="{{item.imgurl}}"></image>
+          </view>
+        </view>
+      </view>
+     <!-- <view class="game-info-item">
+        <view>
+          <image src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"></image>
+        </view>
+        <view class="game-info-down">
+          <image src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"></image>
+        </view>
+      </view>
+      <view class="game-info-item">
+        <view>
+          <image src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"></image>
+        </view>
+        <view class="game-info-down">
+          <image src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"></image>
+        </view>
+      </view>-->
     </view>
 
-    <view style="width:200rpx;height:200rpx;display:inline;margin-left:5px;">
-        <image  style=" width: 170rpx;height:130rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-    </view> 
-    <view style="width:200rpx;height:200rpx;display:inline;margin-left:5px;">
-        <image  style=" width: 170rpx;height:130rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-    </view> 
-    <view style="width:200rpx;height:200rpx;display:inline;margin-left:5px;">
-        <image  style=" width: 170rpx;height:130rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-    </view> 
-
-<!--三个用户选的啥-->
-    <view style="width:220rpx;height:220rpx;display:inline;margin-left:180rpx;">
-        <image  style=" width: 170rpx;height:100rpx;margin-left:5px;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-    </view> 
-    <view style="width:220rpx;height:220rpx;display:inline;">
-        <image  style=" width: 170rpx;height:100rpx;margin-left:5px;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-    </view> 
-    <view style="width:220rpx;height:220rpx;display:inline;">
-        <image  style=" width: 170rpx;height:100rpx;margin-left:5px;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-    </view>
-</view>
-<view style="font-size:15px;color:black;heigh:10%;margin-left:10px;">
-游戏说明(点击图标查看详情)
-</view>
-
-<view class="flex-wrp" style="height:30%;margin-left:10px;margin-top:5px;flex-direction:row;">
-    <view bindtap="bindViewTap" style="width:20%;height:30%;">
-        <image  style=" width: 150rpx;height:130rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
-    </view>
-    
-    <view>
-        <view class="flex-wrp" style="flex-direction:row;" >
-            <view style="font-size:15px;" class="flex-item">小鸡:</view>
-            <view style="font-size:15px;color:#600000;">1赔1000000</view>
-        </view>
-        <view class="flex-wrp" style="flex-direction:row;">
-            <view style="font-size:15px;" class="flex-item">单价:</view>
-            <view style="font-size:15px;color:#600000;">500</view>
-        </view>
-        <view class="flex-wrp" style="flex-direction:row;">
-            <view style="font-size:15px;" class="flex-item">金额:</view>
-            <view style="font-size:15px;color:#600000;">10000</view>
-        </view>
-        <view class="flex-wrp" style="flex-direction:row;">
-            <view style="font-size:15px;" class="flex-item">注意:</view>
-            <view style="font-size:15px;color:#600000;">竞猜后不可修改</view>
-        </view>
-    </view>
 </view>
    
 <button bindtap="add" style="width:250px;margin-left:100px;">确认</button>
@@ -63,62 +50,73 @@
         <image  style=" width: 150rpx;height:130rpx;" src="http://p1.pstatp.com/list/190x124/11980006f42f57a8d8f0"/>
     </view>
 </view>
-
-    
-
-
-
-<view style="font-size:15px;color:red;heigh:10%;margin-left:10px;">
-    系统消息
-</view>
-  <scroll-view scroll-y="true" style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
- <view style="width:100%;height:30%;margin-left:10px;font-size:15px;">
-
-    <view style="width=100px;height:25px;">
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
-      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
+  </view>
+  <view class="game-section">
+    <text style="font-size: 28rpx;">玩家信息（点击个人头像查看）</text>
+    <view style="margin-top: 15rpx;">
+      <view  class="left game-list">
+        <view wx:for="{{roles}}" bindtap="selected" data-ruleid="{{item.id}}" id="{{menu_id}}" wx:for-index="menu_id">
+          <view>
+            <image src="{{item.imgurl}}"></image>
+          </view>
+        </view>
+        
+      </view>
+      <view class="left game-rule">
+       
+        <view class="game-rule-cont-show">
+            <view>
+                <text>{{ruleInfo.gamerulename}}:押一赔{{odds}}</text>
+            </view>
+            <view>
+                <text>单价：{{ruleInfo.unitprice}}金币</text>
+            </view>
+            <view>
+                <text>余额：1000金币</text>
+            </view>
+            <view>
+                <text>注意：{{ruleInfo.remark}}</text>
+            </view>
+        </view>
+        <view bindtap="addGame" data-ruleid="{{ruleInfo.id}}" data-roomid="{{roomId}}" data-nickname="{{userInfo.nickName}}" data-unitprice="{{ruleInfo.unitprice}}" >
+          <input type="button" value="确认竞猜" class="sub-btn"/>
+        </view>
+      </view>
     </view>
-
-    <view style="width=100px;height:25px;">
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
-      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
-    </view>
-    <view style="width=100px;height:25px;">
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
-      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
-    </view>
-    <view style="width=100px;height:25px;">
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
-      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
-    </view>
-    <view style="width=100px;height:25px;">
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
-      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
-    </view>
-    <view style="width=100px;height:25px;">
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
-      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
-    </view>
-    <view style="width=100px;height:25px;">
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
-      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
-    </view>
-    <view style="width=100px;height:25px;">
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
-      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
-    </view>
-    <view style="width=100px;height:25px;">
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">14:21:27</view>
-      <view style="width:30%;height:60px;margin-left:20px;display:inline;">系统</view>  
-      <view style="width:60%;height:60px;margin-left:30px;display:inline;">玩家准备就绪</view>    
-    </view>
- </view>
- </scroll-view>
+  </view>
+  <view class="game-section">
+  <text style="font-size: 28rpx;">系统信息</text>
+    <scroll-view scroll-y="true" style="height: 200px;margin-top: 15rpx ;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <view style="width:100%;height:30%;margin-left:10px;font-size:15px;">
+        <view style="height:25px;margin-bottom: 20rpx">
+          <view style="line-height:50rpx" class="left">14:21:27</view>
+          <view style="margin-left:30rpx;line-height:50rpx" class="left">系统</view>
+          <view style="margin-left:30rpx; line-height:50rpx" class="left">玩家准备就绪</view>
+          <view style="margin-left:30rpx;" class="left">
+            <input type="button" value="退出" class="sub-btn" style="width:150rpx;margin-top:0;height: 20rpx"/>
+          </view>
+        </view>
+        <view style="height:25px;margin-bottom: 20rpx">
+          <view style="line-height:50rpx" class="left">14:21:27</view>
+          <view style="margin-left:30rpx;line-height:50rpx" class="left">系统</view>
+          <view style="margin-left:30rpx; line-height:50rpx" class="left">玩家准备就绪</view>
+          <view style="margin-left:30rpx;" class="left">
+            <input type="button" value="退出" class="sub-btn" style="width:150rpx;margin-top:0;height: 20rpx"/>
+          </view>
+        </view>
+        <view style="height:25px;margin-bottom: 20rpx">
+          <view style="line-height:50rpx" class="left">14:21:27</view>
+          <view style="margin-left:30rpx;line-height:50rpx" class="left">系统</view>
+          <view style="margin-left:30rpx; line-height:50rpx" class="left">玩家准备就绪</view>
+          <view style="margin-left:30rpx;" class="left"><input type="button" value="退出" class="sub-btn" style="width:150rpx;margin-top:0;height: 20rpx"/></view>
+        </view>
+       <view style="height:25px;margin-bottom: 20rpx">
+          <view style="line-height:50rpx" class="left">14:21:27</view>
+          <view style="margin-left:30rpx;line-height:50rpx" class="left">系统</view>
+          <view style="margin-left:30rpx; line-height:50rpx" class="left">玩家准备就绪</view>
+          <view style="margin-left:30rpx;" class="left"><input type="button" value="退出" class="sub-btn" style="width:150rpx;margin-top:0;height: 20rpx"/></view>
+        </view>
+        
+      </view>
+    </scroll-view>
+  </view>

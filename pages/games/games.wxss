@@ -55,7 +55,7 @@
 }
 .section10{
     margin-top:20rpx;
-    width:98%;
+    width:100%;
 }
 .flex-item6{
     width: 20%;
@@ -66,29 +66,25 @@
     align-items: center;
 }
 .section11{
-    width:78%;
+    width:80%;
     height: 120rpx;
 }
 .flex-item61{
-    width: 65%;
+
     height: 60rpx;
     display: flex;  
     margin-left: 20rpx;
 }
 .flex-item62{
-    width: 35%;
+ 
     height: 60rpx;
     margin-left: 250rpx;
-
-  
-    solid:balck;
 }
 .flex-item63{
-    width: 99%;
+
     height: 57rpx;
     margin-top: -1rpx;
-    display: flex;   
-    solid:balck;
+    display: flex;
     margin-left: 25rpx;
 }
 .buttona{
@@ -115,3 +111,4 @@
     solid:black;
     background:#00a2ea;  
 }
+
